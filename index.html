@@ -164,33 +164,43 @@
   .btn-primary{
     background:var(--green);
     color:#04220f;
-    box-shadow:0 14px 34px -12px rgba(37,211,102,0.55);
+    box-shadow:0 0 18px 2px rgba(37,211,102,0.45), 0 14px 34px -12px rgba(37,211,102,0.55);
   }
-  .btn-primary:hover{transform:translateY(-3px); box-shadow:0 18px 40px -10px rgba(37,211,102,0.7);}
+  .btn-primary:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 30px 6px rgba(37,211,102,0.6), 0 18px 40px -10px rgba(37,211,102,0.7);
+  }
   .btn-outline{
     background:transparent;
     border:1.5px solid rgba(255,255,255,0.18);
     color:var(--text);
   }
-  .btn-outline:hover{border-color:var(--yellow); color:var(--yellow); transform:translateY(-3px);}
+  .btn-outline:hover{
+    border-color:var(--yellow); color:var(--yellow); transform:translateY(-3px);
+    box-shadow:0 0 24px 2px rgba(255,201,60,0.35);
+  }
   .btn-solid-blue{
     background:var(--blue);
     color:#fff;
-    box-shadow:var(--shadow-blue);
+    box-shadow:0 0 18px 2px rgba(47,111,237,0.4), var(--shadow-blue);
   }
-  .btn-solid-blue:hover{transform:translateY(-3px);}
+  .btn-solid-blue:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 28px 6px rgba(47,111,237,0.55), var(--shadow-blue);
+  }
   .btn-sm{padding:11px 20px; font-size:13.5px;}
 
   /* ---------- NAV ---------- */
   header{
     position:fixed; top:0; left:0; right:0; z-index:100;
     padding:18px 0;
-    transition:background .4s, padding .4s, border-color .4s;
+    transition:background .4s, padding .4s, border-color .4s, backdrop-filter .4s;
     border-bottom:1px solid transparent;
   }
   header.scrolled{
-    background:rgba(11,18,32,0.86);
-    backdrop-filter:blur(14px);
+    background:rgba(15,23,42,0.8);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
     padding:12px 0;
     border-bottom:1px solid var(--card-line);
   }
@@ -333,6 +343,9 @@
     object-fit:cover;
     z-index:0;
   }
+  .hv-slider{ position:absolute; inset:0; z-index:0; }
+  .hv-slide{ opacity:0; transition:opacity 1.2s ease-in-out; }
+  .hv-slide.active{ opacity:1; }
   .hv-main-overlay{
     position:absolute; inset:0; z-index:1;
     background:linear-gradient(190deg, rgba(11,18,32,0.1) 0%, rgba(11,18,32,0.55) 60%, rgba(11,18,32,0.9) 100%);
@@ -460,12 +473,12 @@
   .diff-card{
     padding:30px 26px; border-radius:var(--radius-md);
     background:var(--card); border:1px solid var(--card-line);
-    transition:transform .4s var(--ease), border-color .4s, box-shadow .4s;
+    transition:all .3s ease;
   }
   .diff-card:hover{
-    transform:translateY(-6px);
+    transform:translateY(-8px);
     border-color:rgba(255,201,60,0.35);
-    box-shadow:var(--shadow-yellow);
+    box-shadow:0 25px 50px -12px rgba(255,201,60,0.28), var(--shadow-yellow);
   }
   .diff-icon{
     width:50px; height:50px; border-radius:14px;
@@ -496,9 +509,13 @@
   .product-card{
     background:var(--card); border:1px solid var(--card-line); border-radius:22px;
     padding:26px; position:relative; overflow:hidden;
-    transition:transform .4s var(--ease), border-color .4s;
+    transition:all .3s ease;
   }
-  .product-card:hover{ transform:rotate(-1deg) translateY(-4px); border-color:rgba(255,201,60,0.3); }
+  .product-card:hover{
+    transform:translateY(-8px);
+    border-color:rgba(255,201,60,0.3);
+    box-shadow:0 25px 50px -12px rgba(0,0,0,0.5), var(--shadow-yellow);
+  }
   .product-card .cat-icon{
     width:52px; height:52px; border-radius:15px; background:rgba(255,255,255,0.05);
     display:flex; align-items:center; justify-content:center; margin-bottom:18px;
@@ -716,9 +733,16 @@
     background:var(--green); display:flex; align-items:center; justify-content:center;
     box-shadow:0 16px 40px -10px rgba(37,211,102,0.65);
     transition:transform .35s var(--ease);
+    animation:wa-pulse 2.4s infinite;
   }
-  .float-wa:hover{ transform:scale(1.08); }
+  .float-wa:hover{ transform:scale(1.08); animation-play-state:paused; }
   .float-wa svg{ width:28px; color:#04220f; }
+  @keyframes wa-pulse{
+    0%{ box-shadow:0 16px 40px -10px rgba(37,211,102,0.65), 0 0 0 0 rgba(37,211,102,0.55); }
+    70%{ box-shadow:0 16px 40px -10px rgba(37,211,102,0.65), 0 0 0 16px rgba(37,211,102,0); }
+    100%{ box-shadow:0 16px 40px -10px rgba(37,211,102,0.65), 0 0 0 0 rgba(37,211,102,0); }
+  }
+  @media(prefers-reduced-motion:reduce){ .float-wa{ animation:none; } }
 
   ::selection{ background:var(--yellow); color:#241900; }
   :focus-visible{ outline:2px solid var(--yellow); outline-offset:3px; border-radius:4px; }
@@ -788,7 +812,10 @@
 
     <div class="hero-visual">
       <div class="hv-card hv-main">
-        <img src="felipe-boy.jpg" alt="Felipe - Loja do Boy" class="hv-main-img" loading="lazy">
+        <div class="hv-slider">
+          <img src="painel-neon.jpg" alt="Loja do Boy" class="hv-main-img hv-slide active" loading="lazy">
+          <img src="produto2.jpg" alt="Loja do Boy" class="hv-main-img hv-slide" loading="lazy">
+        </div>
         <div class="hv-main-overlay"></div>
         <div class="tag-hole"></div>
         <div class="hv-main-content">
@@ -1245,6 +1272,17 @@
   }
   updateStoreStatus();
   setInterval(updateStoreStatus, 60000);
+
+  // Hero image slider — crossfade between store photos
+  const heroSlides = document.querySelectorAll('.hv-slide');
+  if (heroSlides.length > 1) {
+    let slideIndex = 0;
+    setInterval(() => {
+      heroSlides[slideIndex].classList.remove('active');
+      slideIndex = (slideIndex + 1) % heroSlides.length;
+      heroSlides[slideIndex].classList.add('active');
+    }, 4500);
+  }
 </script>
 </body>
 </html>
