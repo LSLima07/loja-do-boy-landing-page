@@ -272,6 +272,11 @@
     position:relative;
     overflow:hidden;
   }
+  .hero-particles{
+    position:absolute; inset:0; width:100%; height:100%;
+    z-index:0; pointer-events:none; opacity:0.7;
+  }
+  .hero .wrap.hero-grid, .hero .marquee-wrap{ position:relative; z-index:1; }
   .hero::before{
     content:"";
     position:absolute; top:-220px; right:-160px;
@@ -780,6 +785,7 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
+  <canvas id="particleCanvas" class="hero-particles" aria-hidden="true"></canvas>
   <div class="wrap hero-grid">
     <div>
       <span class="status-badge" id="statusBadge" data-open="false">
@@ -813,8 +819,8 @@
     <div class="hero-visual">
       <div class="hv-card hv-main">
         <div class="hv-slider">
-          <img src="painel-neon.jpg" alt="Loja do Boy" class="hv-main-img hv-slide active" loading="lazy">
-          <img src="produto2.jpg" alt="Loja do Boy" class="hv-main-img hv-slide" loading="lazy">
+          <img src="painel-neon.jpg" alt="Loja do Boy" class="hv-main-img hv-slide active" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
+          <img src="produto2.jpg" alt="Loja do Boy" class="hv-main-img hv-slide" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
         </div>
         <div class="hv-main-overlay"></div>
         <div class="tag-hole"></div>
@@ -865,7 +871,7 @@
 <section id="sobre" class="section-pad">
   <div class="wrap about-grid">
     <div class="about-visual reveal">
-      <img src="felipe-boy.jpg" alt="Felipe Mendes, fundador da Loja do Boy" class="about-photo" loading="lazy">
+      <img src="felipe-boy.jpg" alt="Felipe Mendes, fundador da Loja do Boy" class="about-photo" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
       <div class="founder-tag">
         <b>Felipe Mendes</b>
         Fundador da Loja do Boy — o mascote na fachada é a cara dele mesmo.
@@ -947,7 +953,7 @@
 
     <div class="product-grid">
       <div class="product-card reveal">
-        <div class="product-photo"><img src="boombox.jpg" alt="Caixa de som e acessórios de celular disponíveis na Loja do Boy" loading="lazy"></div>
+        <div class="product-photo"><img src="boombox.jpg" alt="Caixa de som e acessórios de celular disponíveis na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';"></div>
         <h3>Acessórios & Tech</h3>
         <div class="items">
           <span>Capinhas</span><span>Películas</span><span>Cabos</span><span>Fones bluetooth</span><span>Suporte veicular</span><span>Caixa de som</span>
@@ -957,7 +963,7 @@
       </div>
 
       <div class="product-card reveal">
-        <div class="product-photo"><img src="produto2.jpg" alt="Eletrônicos e periféricos de informática na Loja do Boy" loading="lazy"></div>
+        <div class="product-photo"><img src="produto2.jpg" alt="Eletrônicos e periféricos de informática na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';"></div>
         <h3>Eletrônicos & Informática</h3>
         <div class="items">
           <span>Mouse</span><span>Teclado</span><span>Adaptadores</span><span>Periféricos</span><span>Eletroeletrônicos</span>
@@ -967,7 +973,7 @@
       </div>
 
       <div class="product-card reveal">
-        <div class="product-photo"><img src="faca-churrasco.jpg" alt="Presentes e variedades disponíveis na Loja do Boy" loading="lazy"></div>
+        <div class="product-photo"><img src="faca-churrasco.jpg" alt="Presentes e variedades disponíveis na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';"></div>
         <h3>Presentes & Variedades</h3>
         <div class="items">
           <span>Artigos importados</span><span>Utilidades</span><span>Novidades</span><span>Ideias de presente</span>
@@ -998,7 +1004,7 @@
         </a>
       </div>
       <div class="promo-visual">
-        <img src="moto-eletrica.jpg" alt="Novidade em destaque na Loja do Boy" loading="lazy">
+        <img src="moto-eletrica.jpg" alt="Novidade em destaque na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
       </div>
     </div>
   </div>
@@ -1012,27 +1018,27 @@
     <p class="section-intro reveal">Fotos reais da loja, das novidades e do dia a dia — atualizado direto do Instagram <strong>@lojadoboyoficial</strong>.</p>
     <div class="gallery-grid">
       <div class="gallery-item g-big reveal">
-        <img src="painel-neon.jpg" alt="Painel neon da fachada da Loja do Boy" loading="lazy">
+        <img src="painel-neon.jpg" alt="Painel neon da fachada da Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
         <span class="g-caption">Fachada da loja</span>
       </div>
       <div class="gallery-item reveal">
-        <img src="boombox.jpg" alt="Caixa de som à venda na Loja do Boy" loading="lazy">
+        <img src="boombox.jpg" alt="Caixa de som à venda na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
         <span class="g-caption">Vitrine tech</span>
       </div>
       <div class="gallery-item reveal">
-        <img src="faca-churrasco.jpg" alt="Kit churrasco disponível na Loja do Boy" loading="lazy">
+        <img src="faca-churrasco.jpg" alt="Kit churrasco disponível na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
         <span class="g-caption">Presentes</span>
       </div>
       <div class="gallery-item g-big reveal">
-        <img src="felipe-boy.jpg" alt="Felipe, fundador da Loja do Boy" loading="lazy">
+        <img src="felipe-boy.jpg" alt="Felipe, fundador da Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
         <span class="g-caption">Time Loja do Boy ❤</span>
       </div>
       <div class="gallery-item reveal">
-        <img src="moto-eletrica.jpg" alt="Moto elétrica em destaque na Loja do Boy" loading="lazy">
+        <img src="moto-eletrica.jpg" alt="Moto elétrica em destaque na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
         <span class="g-caption">Novidades</span>
       </div>
       <div class="gallery-item reveal">
-        <img src="jack-daniels-drink.jpg" alt="Variedades e artigos importados na Loja do Boy" loading="lazy">
+        <img src="jack-daniels-drink.jpg" alt="Variedades e artigos importados na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
         <span class="g-caption">Variedades</span>
       </div>
     </div>
