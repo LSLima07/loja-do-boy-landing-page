@@ -1,1297 +1,570 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Loja do Boy | Eletrônicos, Acessórios e Presentes em Angatuba/SP</title>
-<meta name="description" content="Loja do Boy: eletrônicos, acessórios de celular, presentes e novidades importadas no Centro de Angatuba/SP. Atendimento direto no WhatsApp e retirada rápida na loja. Sonhou? Corre atrás.">
-<meta name="keywords" content="loja de eletrônicos Angatuba, acessórios de celular Angatuba, capinha de celular Angatuba, fone bluetooth Angatuba, presentes Angatuba, Loja do Boy, Felipe Mendes">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.lojadoboy.com.br/">
-<link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja do Boy | Painéis em Neon LED Personalizados & Pronta Entrega</title>
+  
+  <!-- Tema do navegador em dispositivos móveis -->
+  <meta name="theme-color" content="#0B1220">
 
-<!-- Open Graph -->
-<meta property="og:type" content="business.business">
-<meta property="og:title" content="Loja do Boy | Eletrônicos e Acessórios em Angatuba/SP">
-<meta property="og:description" content="Eletrônicos, acessórios de celular, presentes e novidades importadas. Retirada rápida no Centro de Angatuba. Fale agora no WhatsApp.">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="Loja do Boy">
+  <!-- SEO / Meta Tags -->
+  <meta name="description" content="Transforme seu espaço com a Loja do Boy. Painéis em Neon LED sob medida para comércio, eventos e decoração residencial. Alta durabilidade, baixo consumo e envio para todo o Brasil.">
+  <meta name="keywords" content="neon led, painel de neon, luminaria neon, letreiro neon personalizado, decoracao neon, neon para bar, neon para quarto">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.lojadoboy.com.br/">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Loja do Boy | Eletrônicos e Acessórios em Angatuba/SP">
-<meta name="twitter:description" content="Sonhou? Corre atrás. Eletrônicos, acessórios e presentes no Centro de Angatuba/SP.">
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.lojadoboy.com.br/">
+  <meta property="og:title" content="Loja do Boy | Painéis em Neon LED Personalizados">
+  <meta property="og:description" content="Painéis em Neon LED com acrílico cristal de alta qualidade. Faça seu projeto personalizado ou escolha modelos a pronta entrega!">
+  <meta property="og:image" content="https://www.lojadoboy.com.br/assets/og-image.jpg">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.lojadoboy.com.br/">
+  <meta property="twitter:title" content="Loja do Boy | Painéis em Neon LED Personalizados">
+  <meta property="twitter:description" content="Painéis em Neon LED com acrílico cristal de alta qualidade. Faça seu projeto personalizado!">
+  <meta property="twitter:image" content="https://www.lojadoboy.com.br/assets/og-image.jpg">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ElectronicsStore",
-  "name": "Loja do Boy",
-  "alternateName": "lojadoboyoficial",
-  "image": "https://www.lojadoboy.com.br/og-image.jpg",
-  "telephone": "+5515996761741",
-  "priceRange": "R$25 - R$200",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "R. Ten. José Telles, 460 - Centro",
-    "addressLocality": "Angatuba",
-    "addressRegion": "SP",
-    "postalCode": "18240-000",
-    "addressCountry": "BR"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "08:30",
-      "closes": "18:00"
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- CSS Interno / Otimizado -->
+  <style>
+    :root {
+      --bg: #0B1220;
+      --card-bg: #131C2E;
+      --accent: #00F0FF;
+      --accent-magenta: #FF007F;
+      --text: #F1F5F9;
+      --text-muted: #94A3B8;
+      --whatsapp: #25D366;
+      --instagram: #E1306C;
+      --radius: 12px;
+      --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Container global */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header & Nav */
+    header {
+      background: rgba(11, 18, 32, 0.9);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--text);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo span {
+      color: var(--accent);
+      text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Botão Hamburger */
+    .burger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    .burger span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: var(--text);
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 60px 0 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-size: 2.8rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero-content h1 span {
+      color: var(--accent-magenta);
+      text-shadow: 0 0 15px rgba(255, 0, 127, 0.4);
+    }
+
+    .hero-content p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp {
+      background: var(--whatsapp);
+      color: #000;
+      box-shadow: 0 0 15px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+    }
+
+    /* Visual Slider / Hero Image */
+    .hero-visual {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(0, 240, 255, 0.15);
+      background-color: var(--card-bg);
+      aspect-ratio: 4/3;
+    }
+
+    .hv-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+    }
+
+    .hv-slide.active {
+      opacity: 1;
+    }
+
+    /* Seção de Vantagens */
+    .features {
+      padding: 60px 0;
+      background: rgba(19, 28, 46, 0.5);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      text-align: center;
+    }
+
+    .feature-card div {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .feature-card h3 {
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .feature-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Vitrine de Produtos */
+    .products {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-info h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .product-info p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .product-info .btn {
+      width: 100%;
+    }
+
+    /* Floating CTA */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: var(--whatsapp);
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      z-index: 99;
+      transition: transform 0.2s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 40px 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .social-links a {
+      color: var(--text);
+      transition: color 0.2s;
+    }
+
+    .social-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .burger {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--card-bg);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD para SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Loja do Boy",
+    "image": "https://www.lojadoboy.com.br/assets/og-image.jpg",
+    "description": "Fabricação e venda de painéis luminosos em Neon LED personalizados e pronta entrega.",
+    "url": "https://www.lojadoboy.com.br",
+    "telephone": "+5511999999999",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR"
     },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Saturday"],
-      "opens": "08:30",
-      "closes": "13:00"
+    "sameAs": [
+      "https://www.instagram.com/lojadoboyoficial"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "bestRating": "5",
+      "ratingCount": 1
     }
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "bestRating": "5",
-    "ratingCount": "1"
-  },
-  "sameAs": ["https://www.instagram.com/lojadoboyoficial"]
-}
-</script>
-
-<style>
-  :root{
-    --bg: #0B1220;
-    --bg-alt: #0E1730;
-    --card: #131C30;
-    --card-line: rgba(255,255,255,0.07);
-    --yellow: #FFC93C;
-    --yellow-soft: #FFE8AE;
-    --blue: #2F6FED;
-    --blue-soft: #7FA8FF;
-    --green: #25D366;
-    --text: #F5F7FA;
-    --muted: #93A0B7;
-    --muted-dim: #5E6B84;
-    --radius-lg: 28px;
-    --radius-md: 18px;
-    --radius-sm: 10px;
-    --shadow-yellow: 0 20px 60px -20px rgba(255,201,60,0.35);
-    --shadow-blue: 0 20px 60px -20px rgba(47,111,237,0.4);
-    --ease: cubic-bezier(.16,1,.3,1);
   }
-
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  html,body{background:var(--bg); color:var(--text);}
-  body{
-    font-family:'Inter',sans-serif;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-  img{max-width:100%; display:block;}
-  a{color:inherit; text-decoration:none;}
-  ul{list-style:none;}
-  button{font-family:inherit; cursor:pointer; border:none; background:none; color:inherit;}
-  svg{display:block;}
-
-  h1,h2,h3,h4{
-    font-family:'Unbounded', sans-serif;
-    line-height:1.15;
-    letter-spacing:-0.01em;
-  }
-
-  .mono{font-family:'JetBrains Mono', monospace;}
-
-  .wrap{
-    max-width:1180px;
-    margin:0 auto;
-    padding:0 24px;
-  }
-
-  .eyebrow{
-    font-family:'JetBrains Mono', monospace;
-    font-size:12.5px;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    color:var(--yellow);
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    margin-bottom:16px;
-    font-weight:700;
-  }
-  .eyebrow::before{
-    content:"";
-    width:18px; height:2px;
-    background:var(--yellow);
-    display:inline-block;
-  }
-
-  section{position:relative; scroll-margin-top:96px;}
-  .section-pad{padding:110px 0;}
-  @media(max-width:768px){ .section-pad{padding:70px 0;} }
-
-  .reveal{
-    opacity:0;
-    transform:translateY(28px);
-    transition:opacity .8s var(--ease), transform .8s var(--ease);
-  }
-  .reveal.in{opacity:1; transform:translateY(0);}
-
-  /* ---------- BUTTONS ---------- */
-  .btn{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    padding:15px 28px;
-    border-radius:100px;
-    font-weight:600;
-    font-size:15px;
-    transition:transform .35s var(--ease), box-shadow .35s var(--ease), background .3s;
-    white-space:nowrap;
-  }
-  .btn:active{transform:scale(0.97);}
-  .btn-primary{
-    background:var(--green);
-    color:#04220f;
-    box-shadow:0 0 18px 2px rgba(37,211,102,0.45), 0 14px 34px -12px rgba(37,211,102,0.55);
-  }
-  .btn-primary:hover{
-    transform:translateY(-3px);
-    box-shadow:0 0 30px 6px rgba(37,211,102,0.6), 0 18px 40px -10px rgba(37,211,102,0.7);
-  }
-  .btn-outline{
-    background:transparent;
-    border:1.5px solid rgba(255,255,255,0.18);
-    color:var(--text);
-  }
-  .btn-outline:hover{
-    border-color:var(--yellow); color:var(--yellow); transform:translateY(-3px);
-    box-shadow:0 0 24px 2px rgba(255,201,60,0.35);
-  }
-  .btn-solid-blue{
-    background:var(--blue);
-    color:#fff;
-    box-shadow:0 0 18px 2px rgba(47,111,237,0.4), var(--shadow-blue);
-  }
-  .btn-solid-blue:hover{
-    transform:translateY(-3px);
-    box-shadow:0 0 28px 6px rgba(47,111,237,0.55), var(--shadow-blue);
-  }
-  .btn-sm{padding:11px 20px; font-size:13.5px;}
-
-  /* ---------- NAV ---------- */
-  header{
-    position:fixed; top:0; left:0; right:0; z-index:100;
-    padding:18px 0;
-    transition:background .4s, padding .4s, border-color .4s, backdrop-filter .4s;
-    border-bottom:1px solid transparent;
-  }
-  header.scrolled{
-    background:rgba(15,23,42,0.8);
-    backdrop-filter:blur(12px);
-    -webkit-backdrop-filter:blur(12px);
-    padding:12px 0;
-    border-bottom:1px solid var(--card-line);
-  }
-  nav{
-    display:flex; align-items:center; justify-content:space-between;
-  }
-  .logo{
-    display:flex; align-items:center; gap:10px;
-    font-family:'Unbounded'; font-weight:800; font-size:19px;
-  }
-  .logo-badge{
-    width:38px; height:38px; border-radius:11px;
-    background:linear-gradient(135deg, var(--yellow), #FFB020);
-    display:flex; align-items:center; justify-content:center;
-    color:#241900; font-family:'Unbounded'; font-weight:900; font-size:17px;
-    box-shadow:0 8px 20px -6px rgba(255,201,60,0.6);
-    transform:rotate(-6deg);
-  }
-  .nav-links{
-    display:flex; gap:36px; align-items:center;
-  }
-  .nav-links a{
-    font-size:14.5px; font-weight:500; color:var(--muted);
-    transition:color .25s; position:relative;
-  }
-  .nav-links a:hover{color:var(--text);}
-  .nav-actions{display:flex; align-items:center; gap:14px;}
-  .burger{display:none; width:44px; height:44px; align-items:center; justify-content:center; border-radius:12px; border:1px solid var(--card-line);}
-  .burger svg{width:20px;}
-
-  @media(max-width:900px){
-    .nav-links{
-      position:fixed; top:0; right:-100%; height:100vh; width:78%; max-width:340px;
-      background:var(--bg-alt); flex-direction:column; justify-content:center; align-items:flex-start;
-      padding:40px; gap:26px; transition:right .5s var(--ease); box-shadow:-30px 0 60px rgba(0,0,0,0.4);
-    }
-    .nav-links.open{right:0;}
-    .nav-links a{font-size:20px; color:var(--text);}
-    .nav-actions .btn-outline{display:none;}
-    .burger{display:flex;}
-  }
-
-  /* ---------- STATUS BADGE (signature element) ---------- */
-  .status-badge{
-    display:inline-flex; align-items:center; gap:9px;
-    padding:9px 16px 9px 12px;
-    border-radius:100px;
-    background:rgba(255,255,255,0.05);
-    border:1px solid var(--card-line);
-    font-family:'JetBrains Mono'; font-size:12.5px; font-weight:500;
-  }
-  .status-dot{
-    width:9px; height:9px; border-radius:50%; background:var(--muted-dim); flex-shrink:0;
-  }
-  .status-badge[data-open="true"] .status-dot{
-    background:var(--green);
-    box-shadow:0 0 0 0 rgba(37,211,102,0.6);
-    animation:pulse-dot 1.8s infinite;
-  }
-  @keyframes pulse-dot{
-    0%{box-shadow:0 0 0 0 rgba(37,211,102,0.55);}
-    70%{box-shadow:0 0 0 8px rgba(37,211,102,0);}
-    100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
-  }
-
-  /* ---------- HERO ---------- */
-  .hero{
-    padding:168px 0 100px;
-    position:relative;
-    overflow:hidden;
-  }
-  .hero .wrap.hero-grid, .hero .marquee-wrap{ position:relative; z-index:1; }
-  .hero::before{
-    content:"";
-    position:absolute; top:-220px; right:-160px;
-    width:620px; height:620px; border-radius:50%;
-    background:radial-gradient(circle, rgba(255,201,60,0.16), transparent 65%);
-    pointer-events:none;
-  }
-  .hero::after{
-    content:"";
-    position:absolute; bottom:-260px; left:-180px;
-    width:560px; height:560px; border-radius:50%;
-    background:radial-gradient(circle, rgba(47,111,237,0.16), transparent 65%);
-    pointer-events:none;
-  }
-  .hero-grid{
-    display:grid; grid-template-columns:1.05fr 0.85fr; gap:60px; align-items:center;
-  }
-  @media(max-width:960px){ .hero-grid{grid-template-columns:1fr; gap:56px;} }
-
-  .hero h1{
-    font-size:clamp(38px, 5.4vw, 66px);
-    font-weight:800;
-    margin:20px 0 22px;
-  }
-  .hero h1 .accent{color:var(--yellow);}
-  .hero p.lead{
-    font-size:18px; color:var(--muted); max-width:480px; margin-bottom:34px;
-  }
-  .hero-cta-row{
-    display:flex; flex-wrap:wrap; gap:14px; margin-bottom:38px;
-  }
-  .trust-row{
-    display:flex; gap:28px; flex-wrap:wrap;
-  }
-  .trust-item{
-    display:flex; flex-direction:column; gap:2px;
-  }
-  .trust-item .num{
-    font-family:'Unbounded'; font-weight:800; font-size:22px; color:var(--text);
-  }
-  .trust-item .label{ font-size:12.5px; color:var(--muted-dim); }
-  .stars{color:var(--yellow); letter-spacing:2px; font-size:15px;}
-
-  /* Hero visual: abstract "product tag" composition */
-  .hero-visual{
-    position:relative;
-    height:460px;
-  }
-  .hv-card{
-    position:absolute;
-    border-radius:24px;
-    background:var(--card);
-    border:1px solid var(--card-line);
-    padding:22px;
-    box-shadow:0 30px 70px -30px rgba(0,0,0,0.6);
-  }
-  .hv-main{
-    width:78%; height:78%;
-    top:0; left:8%;
-    background:linear-gradient(160deg, #16213C, #0E1730);
-    padding:0;
-    overflow:hidden;
-    transform:rotate(-3deg);
-    animation:float1 7s ease-in-out infinite;
-  }
-  .hv-main-img{
-    position:absolute; inset:0;
-    width:100%; height:100%;
-    object-fit:cover;
-    z-index:0;
-  }
-  .hv-slider{ position:absolute; inset:0; z-index:0; }
-  .hv-slide{ opacity:0; transition:opacity 1.2s ease-in-out; }
-  .hv-slide.active{ opacity:1; }
-  .hv-main-overlay{
-    position:absolute; inset:0; z-index:1;
-    background:linear-gradient(190deg, rgba(11,18,32,0.1) 0%, rgba(11,18,32,0.55) 60%, rgba(11,18,32,0.9) 100%);
-  }
-  .hv-main-content{
-    position:relative; z-index:2; height:100%;
-    display:flex; flex-direction:column; justify-content:space-between;
-    padding:22px;
-  }
-  .hv-main .tag-top{display:flex; justify-content:space-between; align-items:flex-start;}
-  .hv-main .tag-icon{
-    width:52px; height:52px; border-radius:14px;
-    background:linear-gradient(135deg, var(--yellow), #ffb020);
-    display:flex; align-items:center; justify-content:center;
-    flex-shrink:0;
-  }
-  .hv-main .tag-icon svg{width:26px; height:26px; color:#241900;}
-  .hv-main .tag-price{ font-family:'JetBrains Mono'; font-size:13px; color:var(--muted); text-align:right; }
-  .hv-main .tag-price b{color:var(--yellow); font-size:15px;}
-  .hv-main h4{font-size:22px; margin-top:14px;}
-  .hv-main .tag-hole{
-    position:absolute; top:14px; left:14px; width:14px; height:14px; border-radius:50%;
-    background:var(--bg); border:1px solid rgba(255,255,255,0.12);
-    z-index:3;
-  }
-
-  .hv-float{
-    width:150px; padding:16px;
-    background:var(--card);
-    right:-4%; bottom:6%;
-    display:flex; align-items:center; gap:12px;
-    animation:float2 6s ease-in-out infinite;
-    transform:rotate(5deg);
-  }
-  .hv-float .dot-icon{
-    width:38px; height:38px; border-radius:11px; background:rgba(47,111,237,0.18);
-    display:flex; align-items:center; justify-content:center; flex-shrink:0;
-  }
-  .hv-float .dot-icon svg{width:18px; color:var(--blue-soft);}
-  .hv-float span{font-size:12px; font-weight:600; color:var(--text);}
-
-  .hv-badge{
-    top:6%; right:2%;
-    width:auto; padding:12px 16px;
-    display:flex; align-items:center; gap:8px;
-    animation:float3 5.5s ease-in-out infinite;
-    transform:rotate(-4deg);
-  }
-  .hv-badge b{font-family:'Unbounded'; color:var(--yellow); font-size:15px;}
-  .hv-badge span{font-size:11.5px; color:var(--muted);}
-
-  @keyframes float1{0%,100%{transform:rotate(-3deg) translateY(0);} 50%{transform:rotate(-3deg) translateY(-14px);}}
-  @keyframes float2{0%,100%{transform:rotate(5deg) translateY(0);} 50%{transform:rotate(5deg) translateY(12px);}}
-  @keyframes float3{0%,100%{transform:rotate(-4deg) translateY(0);} 50%{transform:rotate(-4deg) translateY(-10px);}}
-
-  @media(prefers-reduced-motion:reduce){
-    .hv-main,.hv-float,.hv-badge{animation:none;}
-    .reveal{transition:none; opacity:1; transform:none;}
-  }
-
-  /* Marquee trust ticker */
-  .marquee-wrap{
-    border-top:1px solid var(--card-line); border-bottom:1px solid var(--card-line);
-    background:var(--bg-alt);
-    padding:16px 0; overflow:hidden;
-  }
-  .marquee{
-    display:flex; gap:56px; white-space:nowrap; width:max-content;
-    animation:marquee 26s linear infinite;
-  }
-  @keyframes marquee{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
-  .marquee span{
-    font-family:'JetBrains Mono'; font-size:13px; color:var(--muted-dim);
-    display:flex; align-items:center; gap:10px;
-  }
-  .marquee span b{color:var(--yellow);}
-
-  /* ---------- SOBRE ---------- */
-  .about-grid{
-    display:grid; grid-template-columns:0.9fr 1.1fr; gap:70px; align-items:center;
-  }
-  @media(max-width:900px){ .about-grid{grid-template-columns:1fr; gap:40px;} }
-  .about-visual{
-    aspect-ratio:1/1.05; border-radius:var(--radius-lg);
-    background:linear-gradient(155deg, #16213C 0%, #0E1730 60%, #0B1220 100%);
-    border:1px solid var(--card-line);
-    position:relative; overflow:hidden;
-    display:flex; align-items:center; justify-content:center;
-  }
-  .about-visual{ overflow:hidden; }
-  .about-visual .about-photo{
-    width:100%; height:100%;
-    object-fit:cover; object-position:center 20%;
-    display:block;
-  }
-  .about-visual .founder-tag{
-    position:absolute; bottom:24px; left:24px; right:24px;
-    background:rgba(11,18,32,0.75); backdrop-filter:blur(8px);
-    border:1px solid var(--card-line); border-radius:16px;
-    padding:14px 16px; font-size:13px; color:var(--muted);
-  }
-  .about-visual .founder-tag b{color:var(--text); font-family:'Unbounded'; font-size:14px; display:block; margin-bottom:2px;}
-
-  h2{font-size:clamp(30px,3.6vw,42px); font-weight:800; margin-bottom:18px;}
-  .section-intro{color:var(--muted); font-size:16.5px; max-width:560px; margin-bottom:44px;}
-
-  .about-text p{color:var(--muted); margin-bottom:16px; font-size:16px;}
-  .about-values{
-    display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:32px;
-  }
-  @media(max-width:560px){.about-values{grid-template-columns:1fr;}}
-  .value-pill{
-    padding:16px; border-radius:16px; background:var(--card); border:1px solid var(--card-line);
-  }
-  .value-pill .num{font-family:'JetBrains Mono'; color:var(--yellow); font-size:12px; margin-bottom:8px; display:block;}
-  .value-pill h4{font-size:15px; margin-bottom:4px;}
-  .value-pill p{font-size:13px; color:var(--muted-dim);}
-
-  /* ---------- DIFERENCIAIS ---------- */
-  .diff-grid{
-    display:grid; grid-template-columns:repeat(3,1fr); gap:22px;
-  }
-  @media(max-width:860px){ .diff-grid{grid-template-columns:1fr 1fr;} }
-  @media(max-width:560px){ .diff-grid{grid-template-columns:1fr;} }
-  .diff-card{
-    padding:30px 26px; border-radius:var(--radius-md);
-    background:var(--card); border:1px solid var(--card-line);
-    transition:all .3s ease;
-  }
-  .diff-card:hover{
-    transform:translateY(-8px);
-    border-color:rgba(255,201,60,0.35);
-    box-shadow:0 25px 50px -12px rgba(255,201,60,0.28), var(--shadow-yellow);
-  }
-  .diff-icon{
-    width:50px; height:50px; border-radius:14px;
-    background:rgba(255,201,60,0.12);
-    display:flex; align-items:center; justify-content:center;
-    margin-bottom:20px;
-  }
-  .diff-icon svg{width:24px; color:var(--yellow);}
-  .diff-card:nth-child(even) .diff-icon{background:rgba(47,111,237,0.14);}
-  .diff-card:nth-child(even) .diff-icon svg{color:var(--blue-soft);}
-  .diff-card h3{font-size:18px; margin-bottom:8px;}
-  .diff-card p{font-size:14.5px; color:var(--muted-dim);}
-
-  /* ---------- PRODUTOS ---------- */
-  .cat-tabs{display:flex; gap:10px; margin-bottom:40px; flex-wrap:wrap;}
-  .cat-tab{
-    padding:10px 20px; border-radius:100px; border:1px solid var(--card-line);
-    font-size:13.5px; font-weight:500; color:var(--muted); transition:all .3s;
-  }
-  .cat-tab.active, .cat-tab:hover{ background:var(--yellow); color:#241900; border-color:var(--yellow); font-weight:700;}
-
-  .product-grid{
-    display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
-  }
-  @media(max-width:900px){ .product-grid{grid-template-columns:1fr 1fr;} }
-  @media(max-width:560px){ .product-grid{grid-template-columns:1fr;} }
-
-  .product-card{
-    background:var(--card); border:1px solid var(--card-line); border-radius:22px;
-    padding:26px; position:relative; overflow:hidden;
-    transition:all .3s ease;
-  }
-  .product-card:hover{
-    transform:translateY(-8px);
-    border-color:rgba(255,201,60,0.3);
-    box-shadow:0 25px 50px -12px rgba(0,0,0,0.5), var(--shadow-yellow);
-  }
-  .product-card .cat-icon{
-    width:52px; height:52px; border-radius:15px; background:rgba(255,255,255,0.05);
-    display:flex; align-items:center; justify-content:center; margin-bottom:18px;
-    overflow:hidden;
-  }
-  .product-card .cat-icon svg{width:26px; color:var(--yellow);}
-  .product-card .cat-icon img{ width:100%; height:100%; object-fit:cover; }
-  .product-card .product-photo{
-    width:calc(100% + 52px); margin:-26px -26px 20px;
-    aspect-ratio:4/3; overflow:hidden;
-  }
-  .product-card .product-photo img{ width:100%; height:100%; object-fit:cover; display:block; }
-  .product-card h3{font-size:19px; margin-bottom:10px;}
-  .product-card .items{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px;}
-  .product-card .items span{
-    font-size:12px; padding:6px 11px; border-radius:100px;
-    background:rgba(255,255,255,0.05); color:var(--muted); font-family:'JetBrains Mono';
-  }
-  .product-card .price-range{
-    font-family:'JetBrains Mono'; font-size:13px; color:var(--muted-dim); margin-bottom:18px;
-  }
-  .price-range b{color:var(--yellow);}
-
-  .catalog-note{
-    margin-top:36px; padding:24px 26px; border-radius:18px;
-    border:1.5px dashed var(--card-line); display:flex; align-items:center; gap:16px; flex-wrap:wrap;
-    justify-content:space-between;
-  }
-  .catalog-note p{font-size:14px; color:var(--muted); max-width:520px;}
-  .catalog-note strong{color:var(--text);}
-
-  /* ---------- PROMO BANNER ---------- */
-  .promo-banner{
-    border-radius:var(--radius-lg);
-    background:linear-gradient(120deg, #1a2547 0%, #0E1730 55%, #1a1608 130%);
-    border:1px solid var(--card-line);
-    padding:52px;
-    display:grid; grid-template-columns:1.3fr 0.7fr; gap:40px; align-items:center;
-    position:relative; overflow:hidden;
-  }
-  @media(max-width:800px){ .promo-banner{grid-template-columns:1fr; padding:36px 26px;} }
-  .promo-banner::before{
-    content:""; position:absolute; top:-100px; right:-60px; width:320px; height:320px; border-radius:50%;
-    background:radial-gradient(circle, rgba(255,201,60,0.2), transparent 70%);
-  }
-  .promo-tag{
-    display:inline-block; background:var(--yellow); color:#241900; font-weight:800;
-    font-size:12px; padding:6px 14px; border-radius:100px; margin-bottom:18px;
-    font-family:'JetBrains Mono';
-  }
-  .promo-banner h3{font-size:clamp(24px,3vw,34px); margin-bottom:14px;}
-  .promo-banner p{color:var(--muted); max-width:460px; margin-bottom:26px;}
-  .promo-visual{
-    aspect-ratio:1; border-radius:20px; background:rgba(255,255,255,0.03);
-    border:1px solid var(--card-line); display:flex; align-items:center; justify-content:center;
-    position:relative;
-  }
-  .promo-visual svg{width:44%; color:var(--yellow); opacity:0.9;}
-  .promo-visual{ overflow:hidden; padding:0; }
-  .promo-visual img{ width:100%; height:100%; object-fit:cover; display:block; }
-
-  /* ---------- GALERIA ---------- */
-  .gallery-grid{
-    display:grid; grid-template-columns:repeat(4,1fr); gap:16px; grid-auto-rows:130px;
-  }
-  @media(max-width:800px){ .gallery-grid{grid-template-columns:repeat(2,1fr); grid-auto-rows:110px;} }
-  .gallery-item{
-    border-radius:16px; background:var(--card); border:1px solid var(--card-line);
-    display:flex; align-items:center; justify-content:center; flex-direction:column; gap:8px;
-    color:var(--muted-dim); transition:transform .35s var(--ease), border-color .35s;
-    cursor:pointer;
-  }
-  .gallery-item:hover{ transform:scale(1.03); border-color:rgba(255,201,60,0.3); color:var(--yellow);}
-  .gallery-item svg{width:26px;}
-  .gallery-item span{font-size:11px; font-family:'JetBrains Mono';}
-  .gallery-item{ overflow:hidden; position:relative; padding:0; }
-  .gallery-item img{
-    position:absolute; inset:0; width:100%; height:100%;
-    object-fit:cover; display:block;
-  }
-  .gallery-item .g-caption{
-    position:relative; z-index:2; align-self:flex-end; width:100%;
-    padding:10px 12px;
-    background:linear-gradient(0deg, rgba(11,18,32,0.85), transparent);
-    color:#fff; font-size:11px; font-family:'JetBrains Mono';
-  }
-  .g-big{ grid-row:span 2; }
-
-  /* ---------- AVALIAÇÕES ---------- */
-  .review-wrap{ display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; }
-  .review-score{
-    background:var(--card); border:1px solid var(--card-line); border-radius:var(--radius-md);
-    padding:34px; text-align:center; min-width:220px; flex-shrink:0;
-  }
-  .review-score .big-num{font-family:'Unbounded'; font-weight:900; font-size:52px; color:var(--yellow);}
-  .review-score .stars{font-size:20px; margin:10px 0;}
-  .review-score p{font-size:13px; color:var(--muted-dim);}
-
-  .review-card{
-    background:var(--card); border:1px solid var(--card-line); border-radius:var(--radius-md);
-    padding:30px; flex:1; min-width:260px; position:relative;
-  }
-  .review-card .quote-mark{ font-family:'Unbounded'; font-size:52px; color:rgba(255,201,60,0.25); line-height:1; margin-bottom:6px;}
-  .review-card p.txt{ font-size:16px; color:var(--text); margin-bottom:20px; }
-  .review-card .who{ display:flex; align-items:center; gap:12px;}
-  .review-card .avatar{
-    width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg, var(--blue), var(--yellow));
-    display:flex; align-items:center; justify-content:center; font-family:'Unbounded'; font-weight:700; font-size:14px; color:#0B1220;
-  }
-  .review-card .who .name{font-weight:600; font-size:14px;}
-  .review-card .who .src{font-size:12px; color:var(--muted-dim);}
-
-  /* ---------- MAPA ---------- */
-  .map-grid{ display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:stretch; }
-  @media(max-width:860px){ .map-grid{grid-template-columns:1fr;} }
-  .map-embed{ border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--card-line); min-height:340px; }
-  .map-embed iframe{ width:100%; height:100%; min-height:340px; border:0; filter:grayscale(0.15) invert(0.92) contrast(0.9); }
-  .map-info{
-    background:var(--card); border:1px solid var(--card-line); border-radius:var(--radius-md);
-    padding:34px; display:flex; flex-direction:column; justify-content:center; gap:22px;
-  }
-  .map-info-row{ display:flex; gap:16px; align-items:flex-start; }
-  .map-info-row .ic{
-    width:42px; height:42px; border-radius:12px; background:rgba(255,201,60,0.12);
-    display:flex; align-items:center; justify-content:center; flex-shrink:0;
-  }
-  .map-info-row .ic svg{ width:20px; color:var(--yellow); }
-  .map-info-row h4{font-size:15px; margin-bottom:3px;}
-  .map-info-row p{font-size:13.5px; color:var(--muted);}
-
-  /* ---------- CONTATO ---------- */
-  .contact-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-  @media(max-width:860px){ .contact-grid{grid-template-columns:1fr;} }
-  .contact-card{
-    background:var(--card); border:1px solid var(--card-line); border-radius:var(--radius-md);
-    padding:30px; display:flex; flex-direction:column; gap:16px;
-  }
-  .contact-card .ic{
-    width:46px; height:46px; border-radius:13px; display:flex; align-items:center; justify-content:center;
-  }
-  .contact-card.wa .ic{ background:rgba(37,211,102,0.15); }
-  .contact-card.wa .ic svg{ color:var(--green); width:22px; }
-  .contact-card.ig .ic{ background:rgba(47,111,237,0.15); }
-  .contact-card.ig .ic svg{ color:var(--blue-soft); width:22px; }
-  .contact-card.hr .ic{ background:rgba(255,201,60,0.15); }
-  .contact-card.hr .ic svg{ color:var(--yellow); width:22px; }
-  .contact-card h4{font-size:16px;}
-  .contact-card p{font-size:13.5px; color:var(--muted);}
-  .contact-card .hours-row{ display:flex; justify-content:space-between; font-size:13px; color:var(--muted); font-family:'JetBrains Mono'; }
-  .contact-card .hours-row b{color:var(--text); font-weight:600;}
-
-  /* ---------- FAQ ---------- */
-  .faq-list{ max-width:800px; }
-  .faq-item{
-    border-bottom:1px solid var(--card-line); padding:22px 0;
-  }
-  .faq-q{
-    display:flex; justify-content:space-between; align-items:center; cursor:pointer; gap:20px;
-    width:100%; text-align:left; padding:0; border-radius:6px;
-  }
-  .faq-q h4{ font-size:16.5px; font-weight:600; font-family:'Inter'; }
-  .faq-q .chev{ width:22px; height:22px; flex-shrink:0; transition:transform .35s var(--ease); color:var(--yellow); }
-  .faq-item.open .faq-q .chev{ transform:rotate(135deg); }
-  .faq-a{
-    max-height:0; overflow:hidden; transition:max-height .4s var(--ease), padding .4s;
-  }
-  .faq-item.open .faq-a{ max-height:200px; padding-top:14px; }
-  .faq-a p{ color:var(--muted); font-size:14.5px; max-width:640px; }
-
-  /* ---------- CTA FINAL ---------- */
-  .cta-final{
-    border-radius:var(--radius-lg);
-    background:linear-gradient(120deg, var(--yellow) 0%, #FFB020 100%);
-    padding:70px 50px; text-align:center; position:relative; overflow:hidden;
-  }
-  @media(max-width:600px){ .cta-final{padding:50px 26px;} }
-  .cta-final::before{
-    content:""; position:absolute; inset:0;
-    background:radial-gradient(circle at 20% 20%, rgba(255,255,255,0.35), transparent 40%);
-  }
-  .cta-final h2{ color:#241900; margin-bottom:14px; }
-  .cta-final p{ color:#4a3a10; font-size:17px; margin-bottom:34px; max-width:520px; margin-inline:auto; }
-  .cta-final .btn-primary{ box-shadow:0 18px 40px -10px rgba(4,34,15,0.4); }
-  .cta-final .btn-dark{ background:#191100; color:#fff; }
-  .cta-final .btn-dark:hover{ transform:translateY(-3px); }
-  .cta-btn-row{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; position:relative; z-index:2; }
-
-  /* ---------- FOOTER ---------- */
-  footer{ padding:70px 0 30px; border-top:1px solid var(--card-line); }
-  .footer-grid{
-    display:grid; grid-template-columns:1.4fr repeat(3,1fr); gap:40px; margin-bottom:50px;
-  }
-  @media(max-width:800px){ .footer-grid{grid-template-columns:1fr 1fr; gap:30px;} }
-  @media(max-width:520px){ .footer-grid{grid-template-columns:1fr;} }
-  .footer-brand p{ color:var(--muted-dim); font-size:13.5px; margin:16px 0 20px; max-width:280px; }
-  .footer-social{ display:flex; gap:10px; }
-  .footer-social a{
-    width:38px; height:38px; border-radius:11px; border:1px solid var(--card-line);
-    display:flex; align-items:center; justify-content:center; transition:border-color .3s, color .3s;
-  }
-  .footer-social a:hover{ border-color:var(--yellow); color:var(--yellow); }
-  .footer-social svg{ width:17px; }
-  .footer-col h5{ font-family:'JetBrains Mono'; font-size:12px; text-transform:uppercase; letter-spacing:0.1em; color:var(--muted-dim); margin-bottom:18px; }
-  .footer-col a, .footer-col p{ display:block; font-size:14px; color:var(--muted); margin-bottom:12px; transition:color .25s; }
-  .footer-col a:hover{ color:var(--yellow); }
-  .footer-bottom{
-    display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
-    padding-top:26px; border-top:1px solid var(--card-line);
-    font-size:12.5px; color:var(--muted-dim);
-  }
-
-  /* ---------- FLOATING WHATSAPP ---------- */
-  .float-wa{
-    position:fixed; bottom:24px; right:24px; z-index:90;
-    width:60px; height:60px; border-radius:50%;
-    background:var(--green); display:flex; align-items:center; justify-content:center;
-    box-shadow:0 16px 40px -10px rgba(37,211,102,0.65);
-    transition:transform .35s var(--ease);
-    animation:wa-pulse 2.4s infinite;
-  }
-  .float-wa:hover{ transform:scale(1.08); animation-play-state:paused; }
-  .float-wa svg{ width:28px; color:#04220f; }
-  @keyframes wa-pulse{
-    0%{ box-shadow:0 16px 40px -10px rgba(37,211,102,0.65), 0 0 0 0 rgba(37,211,102,0.55); }
-    70%{ box-shadow:0 16px 40px -10px rgba(37,211,102,0.65), 0 0 0 16px rgba(37,211,102,0); }
-    100%{ box-shadow:0 16px 40px -10px rgba(37,211,102,0.65), 0 0 0 0 rgba(37,211,102,0); }
-  }
-  @media(prefers-reduced-motion:reduce){ .float-wa{ animation:none; } }
-
-  ::selection{ background:var(--yellow); color:#241900; }
-  :focus-visible{ outline:2px solid var(--yellow); outline-offset:3px; border-radius:4px; }
-</style>
+  </script>
 </head>
 <body>
 
-<!-- ============ HEADER ============ -->
-<header id="siteHeader">
-  <div class="wrap">
-    <nav>
-      <a href="#" class="logo"><span class="logo-badge">B</span> Loja do Boy</a>
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo">⚡ <span>LOJA DO BOY</span></a>
+      
+      <!-- Acessibilidade adicionada ao botão burger -->
+      <button class="burger" id="burgerBtn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <ul class="nav-links" id="navLinks">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#diferenciais">Diferenciais</a></li>
-        <li><a href="#produtos">Produtos</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#avaliacoes">Avaliações</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#vantagens">Vantagens</a></li>
+        <li><a href="#produtos">Modelos</a></li>
+        <li><a href="#contato">Orçamento</a></li>
       </ul>
-      <div class="nav-actions">
-        <a href="#contato" class="btn btn-outline btn-sm">Como chegar</a>
-        <a href="https://wa.me/5515996761741?text=Oi!%20Vim%20pelo%20site%20e%20quero%20saber%20mais." class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 9.5c0 3.5 3 6.5 6.5 6.5"/></svg>
-          WhatsApp
-        </a>
-        <button class="burger" id="burgerBtn" aria-label="Abrir menu">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-        </button>
-      </div>
-    </nav>
-  </div>
-</header>
-
-<!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="status-badge" id="statusBadge" data-open="false">
-        <span class="status-dot"></span>
-        <span id="statusText">Verificando horário…</span>
-      </span>
-      <h1>Sonhou? <span class="accent">Corre atrás.</span></h1>
-      <p class="lead">Eletrônicos, acessórios de celular, presentes e as últimas novidades importadas — tudo no Centro de Angatuba, com atendimento direto de gente que entende do assunto.</p>
-      <div class="hero-cta-row">
-        <a href="https://wa.me/5515996761741?text=Oi!%20Vim%20pelo%20site%20e%20quero%20saber%20mais." class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 9.5c0 3.5 3 6.5 6.5 6.5"/></svg>
-          Falar no WhatsApp
-        </a>
-        <a href="#mapa" class="btn btn-outline">
-          <svg viewBox="0 0 24 24" width="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-7.58 7-13A7 7 0 0 0 5 9c0 5.42 7 13 7 13Z"/><circle cx="12" cy="9" r="2.5"/></svg>
-          Como chegar
-        </a>
-        <a href="https://www.instagram.com/lojadoboyoficial" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1"/></svg>
-          Instagram
-        </a>
-      </div>
-      <div class="trust-row">
-        <div class="trust-item"><span class="stars">★★★★★</span><span class="label">avaliação no Google</span></div>
-        <div class="trust-item"><span class="num">4,8</span><span class="label">nota média</span></div>
-        <div class="trust-item"><span class="num">+4.400</span><span class="label">seguidores no Instagram</span></div>
-        <div class="trust-item"><span class="num">Centro</span><span class="label">de Angatuba/SP</span></div>
-      </div>
     </div>
+  </header>
 
-    <div class="hero-visual">
-      <div class="hv-card hv-main">
-        <div class="hv-slider">
-          <img src="painel-neon.jpg" alt="Fachada da Loja do Boy com painel neon iluminado, Centro de Angatuba/SP" class="hv-main-img hv-slide active" loading="eager" fetchpriority="high" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
-          <img src="produto2.jpg" alt="Vitrine de eletrônicos e acessórios da Loja do Boy em Angatuba/SP" class="hv-main-img hv-slide" loading="eager" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
+  <main>
+    <!-- Hero Section -->
+    <section class="hero container" id="inicio">
+      <div class="hero-content">
+        <h1>Destaque o seu espaço com <span>Neon LED</span></h1>
+        <p>Projetos exclusivos sob medida e luminárias a pronta entrega com tecnologia de alta durabilidade e baixo consumo energético.</p>
+        <div class="hero-buttons">
+          <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento%20de%20Neon%20LED." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+            Solicitar Orçamento
+          </a>
+          <a href="https://www.instagram.com/lojadoboyoficial" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+          </a>
         </div>
-        <div class="hv-main-overlay"></div>
-        <div class="tag-hole"></div>
-        <div class="hv-main-content">
-          <div class="tag-top">
-            <div class="tag-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
-            </div>
-            <div class="tag-price mono">retirada em<br><b>minutos</b></div>
+      </div>
+
+      <!-- Galeria Slider na Hero -->
+      <div class="hero-visual">
+        <img src="assets/painel-neon.jpg" alt="Painel em Neon LED personalizado iluminado" class="hv-slide active" loading="eager" fetchpriority="high">
+        <img src="assets/produto2.jpg" alt="Detalhe da produção do Neon LED em acrílico" class="hv-slide" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Vantagens -->
+    <section class="features" id="vantagens">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card">
+            <div>💡</div>
+            <h3>Baixo Consumo</h3>
+            <p>Tecnologia LED 12V que economiza até 80% de energia em relação ao neon tradicional.</p>
           </div>
-          <div>
-            <h4>Vitrine viva.<br>Atendimento humano.</h4>
+          <div class="feature-card">
+            <div>🛡️</div>
+            <h3>Alta Durabilidade</h3>
+            <p>Montado sobre base de acrílico cristal de alta resistência e neon de longa vida útil.</p>
+          </div>
+          <div class="feature-card">
+            <div>🎨</div>
+            <h3>100% Personalizável</h3>
+            <p>Sua logo, frase ou desenho transformados em arte luminosa exatamente como planejou.</p>
           </div>
         </div>
       </div>
-      <div class="hv-card hv-float">
-        <div class="dot-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+    </section>
+
+    <!-- Produtos -->
+    <section class="products container" id="produtos">
+      <h2 class="section-title">Modelos em Destaque</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="assets/produto1.jpg" alt="Painel Neon Frase Decorativa" loading="lazy">
+          <div class="product-info">
+            <h3>Frases Decorativas</h3>
+            <p>Ideais para ambientes residenciais, quartos, salas e cenários de gravações.</p>
+            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20saber%20mais%20sobre%20as%20Frases%20Decorativas." class="btn btn-outline" target="_blank" rel="noopener noreferrer">Consultar Opções</a>
+          </div>
         </div>
-        <span>R$25 a R$200<br><small style="color:var(--muted-dim); font-weight:400;">ticket médio</small></span>
-      </div>
-      <div class="hv-card hv-badge">
-        <span>🔥</span>
-        <span><b>POCO X8 Pro</b><br>chegou na loja</span>
-      </div>
-    </div>
-  </div>
 
-  <div class="marquee-wrap">
-    <div class="wrap">
-      <div class="marquee">
-        <span><b>★ 4,8</b> no Google Maps</span>
-        <span><b>+4.400</b> seguidores no Instagram</span>
-        <span>Retirada <b>imediata</b> na loja</span>
-        <span>Atendimento <b>direto</b> no WhatsApp</span>
-        <span>Novidades <b>toda semana</b></span>
-        <span><b>★ 4,8</b> no Google Maps</span>
-        <span><b>+4.400</b> seguidores no Instagram</span>
-        <span>Retirada <b>imediata</b> na loja</span>
-        <span>Atendimento <b>direto</b> no WhatsApp</span>
-        <span>Novidades <b>toda semana</b></span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SOBRE ============ -->
-<section id="sobre" class="section-pad">
-  <div class="wrap about-grid">
-    <div class="about-visual reveal">
-      <img src="felipe-boy.jpg" alt="Felipe Mendes, fundador da Loja do Boy" class="about-photo" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
-      <div class="founder-tag">
-        <b>Felipe Mendes</b>
-        Fundador da Loja do Boy — o mascote na fachada é a cara dele mesmo.
-      </div>
-    </div>
-    <div class="about-text reveal">
-      <span class="eyebrow">Sobre a loja</span>
-      <h2>Uma loja com nome, cara e endereço.</h2>
-      <p>A Loja do Boy nasceu no Centro de Angatuba do jeito que o Felipe é: direto, gente boa e sempre com a última novidade em tecnologia na mão. Não por acaso, o mascote estampado na fachada é a cara dele — porque aqui não tem atendente escondido atrás de balcão, tem gente de verdade cuidando do seu pedido.</p>
-      <p>O que começou com acessórios de celular virou uma loja completa: eletrônicos, informática, presentes e artigos importados, sempre com o compromisso de vender produto original, no preço certo, e resolver rápido — de preferência, ainda na conversa do WhatsApp.</p>
-      <div class="about-values">
-        <div class="value-pill">
-          <span class="num">MISSÃO</span>
-          <h4>Facilitar tecnologia</h4>
-          <p>Levar o que há de novo para o dia a dia de Angatuba, sem enrolação.</p>
-        </div>
-        <div class="value-pill">
-          <span class="num">VALORES</span>
-          <h4>Produto original</h4>
-          <p>Sem gato por lebre. Cada item vendido é o que está no anúncio.</p>
-        </div>
-        <div class="value-pill">
-          <span class="num">COMPROMISSO</span>
-          <h4>Resposta rápida</h4>
-          <p>Chamou no WhatsApp, o Felipe e a equipe respondem — sem robô enrolando.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ DIFERENCIAIS ============ -->
-<section id="diferenciais" class="section-pad" style="background:var(--bg-alt);">
-  <div class="wrap">
-    <span class="eyebrow reveal">Por que a Loja do Boy</span>
-    <h2 class="reveal">Diferenciais que fazem sentido<br>pra quem mora aqui.</h2>
-    <p class="section-intro reveal">Nada de promessa vazia — são coisas que os próprios clientes comentam nas avaliações e no dia a dia da loja.</p>
-    <div class="diff-grid">
-      <div class="diff-card reveal">
-        <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-7.58 7-13A7 7 0 0 0 5 9c0 5.42 7 13 7 13Z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
-        <h3>Localização central</h3>
-        <p>Bem no Centro de Angatuba, na Rua Ten. José Telles — fácil de achar, fácil de estacionar, fácil de voltar sempre que precisar.</p>
-      </div>
-      <div class="diff-card reveal">
-        <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8Z"/></svg></div>
-        <h3>Retirada imediata</h3>
-        <p>Viu o produto, confirmou pelo WhatsApp e já retira na loja em minutos. Sem esperar frete, sem depender de transportadora.</p>
-      </div>
-      <div class="diff-card reveal">
-        <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/></svg></div>
-        <h3>Atendimento humano e direto</h3>
-        <p>Dúvida, negociação ou reserva de produto — tudo é resolvido falando direto com o lojista pelo WhatsApp, sem central de atendimento.</p>
-      </div>
-      <div class="diff-card reveal">
-        <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7 12 3 4 7v10l8 4 8-4V7Z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg></div>
-        <h3>Variedade de verdade</h3>
-        <p>De capinha e fone bluetooth a periférico de PC e presente pra ocasião especial — uma loja só, várias necessidades resolvidas.</p>
-      </div>
-      <div class="diff-card reveal">
-        <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3 2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5L12 3Z"/></svg></div>
-        <h3>Nota 4,8 no Google</h3>
-        <p>Reputação construída avaliação por avaliação, com clientes elogiando atendimento, variedade e preço acessível.</p>
-      </div>
-      <div class="diff-card reveal">
-        <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></div>
-        <h3>Novidade toda semana</h3>
-        <p>De lançamento de smartphone a acessório recém-chegado — acompanhe o Instagram e fique por dentro antes de todo mundo.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PRODUTOS ============ -->
-<section id="produtos" class="section-pad">
-  <div class="wrap">
-    <span class="eyebrow reveal">Vitrine</span>
-    <h2 class="reveal">O que você encontra na loja</h2>
-    <p class="section-intro reveal">Categorias organizadas pra você já chegar no WhatsApp sabendo exatamente o que procurar.</p>
-
-    <div class="product-grid">
-      <div class="product-card reveal">
-        <div class="product-photo"><img src="boombox.jpg" alt="Caixa de som e acessórios de celular disponíveis na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';"></div>
-        <h3>Acessórios & Tech</h3>
-        <div class="items">
-          <span>Capinhas</span><span>Películas</span><span>Cabos</span><span>Fones bluetooth</span><span>Suporte veicular</span><span>Caixa de som</span>
-        </div>
-        <div class="price-range">a partir de <b>R$ 25</b></div>
-        <a href="https://wa.me/5515996761741?text=Oi!%20Quero%20ver%20acess%C3%B3rios%20de%20celular." class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Consultar no WhatsApp</a>
-      </div>
-
-      <div class="product-card reveal">
-        <div class="product-photo"><img src="produto2.jpg" alt="Eletrônicos e periféricos de informática na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';"></div>
-        <h3>Eletrônicos & Informática</h3>
-        <div class="items">
-          <span>Mouse</span><span>Teclado</span><span>Adaptadores</span><span>Periféricos</span><span>Eletroeletrônicos</span>
-        </div>
-        <div class="price-range">faixa de <b>R$ 40 – R$ 200</b></div>
-        <a href="https://wa.me/5515996761741?text=Oi!%20Quero%20ver%20eletr%C3%B4nicos%20e%20inform%C3%A1tica." class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Consultar no WhatsApp</a>
-      </div>
-
-      <div class="product-card reveal">
-        <div class="product-photo"><img src="faca-churrasco.jpg" alt="Presentes e variedades disponíveis na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';"></div>
-        <h3>Presentes & Variedades</h3>
-        <div class="items">
-          <span>Artigos importados</span><span>Utilidades</span><span>Novidades</span><span>Ideias de presente</span>
-        </div>
-        <div class="price-range">a partir de <b>R$ 25</b></div>
-        <a href="https://wa.me/5515996761741?text=Oi!%20Quero%20ver%20op%C3%A7%C3%B5es%20de%20presente." class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Consultar no WhatsApp</a>
-      </div>
-    </div>
-
-    <div class="catalog-note reveal">
-      <p><strong>Catálogo completo em construção.</strong> O estoque muda toda semana — pra ver o que chegou agora, o jeito mais rápido é chamar no WhatsApp ou dar uma olhada no Instagram.</p>
-      <a href="https://wa.me/5515996761741" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Ver novidades</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PROMOÇÕES ============ -->
-<section class="section-pad" style="padding-top:0;">
-  <div class="wrap">
-    <div class="promo-banner reveal">
-      <div>
-        <span class="promo-tag">NOVIDADE DA SEMANA</span>
-        <h3>Tem novidade nova na Loja do Boy.</h3>
-        <p>Toda semana chega alguma novidade na vitrine — de eletrônico a mobilidade elétrica. Chama no WhatsApp e confere o que acabou de chegar.</p>
-        <a href="https://wa.me/5515996761741?text=Oi!%20Quero%20saber%20mais%20sobre%20as%20novidades%20da%20semana." class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/></svg>
-          Quero saber mais
-        </a>
-      </div>
-      <div class="promo-visual">
-        <img src="moto-eletrica.jpg" alt="Novidade em destaque na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ GALERIA ============ -->
-<section id="galeria" class="section-pad" style="background:var(--bg-alt);">
-  <div class="wrap">
-    <span class="eyebrow reveal">Galeria</span>
-    <h2 class="reveal">Um pouco da loja e do dia a dia</h2>
-    <p class="section-intro reveal">Fotos reais da loja, das novidades e do dia a dia — atualizado direto do Instagram <strong>@lojadoboyoficial</strong>.</p>
-    <div class="gallery-grid">
-      <div class="gallery-item g-big reveal">
-        <img src="painel-neon.jpg" alt="Painel neon na fachada da Loja do Boy, Centro de Angatuba/SP" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
-        <span class="g-caption">Fachada da loja</span>
-      </div>
-      <div class="gallery-item reveal">
-        <img src="boombox.jpg" alt="Caixa de som Boombox à venda na Loja do Boy em Angatuba/SP" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
-        <span class="g-caption">Vitrine tech</span>
-      </div>
-      <div class="gallery-item reveal">
-        <img src="faca-churrasco.jpg" alt="Kit churrasco disponível na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
-        <span class="g-caption">Presentes</span>
-      </div>
-      <div class="gallery-item g-big reveal">
-        <img src="felipe-boy.jpg" alt="Felipe Mendes e equipe da Loja do Boy, Centro de Angatuba/SP" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
-        <span class="g-caption">Time Loja do Boy ❤</span>
-      </div>
-      <div class="gallery-item reveal">
-        <img src="moto-eletrica.jpg" alt="Moto elétrica em destaque na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
-        <span class="g-caption">Novidades</span>
-      </div>
-      <div class="gallery-item reveal">
-        <img src="jack-daniels-drink.jpg" alt="Variedades e artigos importados na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
-        <span class="g-caption">Variedades</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ AVALIAÇÕES ============ -->
-<section id="avaliacoes" class="section-pad">
-  <div class="wrap">
-    <span class="eyebrow reveal">O que dizem os clientes</span>
-    <h2 class="reveal">Avaliações reais, direto do Google</h2>
-    <p class="section-intro reveal">Nada de depoimento inventado — só o que os clientes realmente registraram.</p>
-    <div class="review-wrap">
-      <div class="review-score reveal">
-        <div class="big-num">4,8</div>
-        <div class="stars">★★★★★</div>
-        <p>Reputação Google Maps</p>
-      </div>
-      <div class="review-card reveal">
-        <div class="quote-mark">"</div>
-        <p class="txt">Excelente atendimento, loja muito completa com variedade de eletrônicos e utilidades no centro de Angatuba.</p>
-        <div class="who">
-          <div class="avatar">GM</div>
-          <div>
-            <div class="name">Cliente Local</div>
-            <div class="src">Avaliação verificada — Google</div>
+        <div class="product-card">
+          <img src="assets/produto2.jpg" alt="Painel Neon Logotipo Comercial" loading="lazy">
+          <div class="product-info">
+            <h3>Logotipos Comerciais</h3>
+            <p>Destaque a marca da sua empresa, bar, restaurante ou salão de beleza.</p>
+            <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20orçar%20meu%20Logotipo%20em%20Neon." class="btn btn-outline" target="_blank" rel="noopener noreferrer">Orçar Marca</a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+  </main>
 
-<!-- ============ MAPA ============ -->
-<section id="mapa" class="section-pad" style="background:var(--bg-alt);">
-  <div class="wrap">
-    <span class="eyebrow reveal">Localização</span>
-    <h2 class="reveal">Fácil de achar, no Centro de Angatuba</h2>
-    <div class="map-grid" style="margin-top:36px;">
-      <div class="map-embed reveal">
-        <iframe src="https://www.google.com/maps?q=R.+Ten.+Jos%C3%A9+Telles,+460,+Centro,+Angatuba+-+SP,+18240-000&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa - Loja do Boy"></iframe>
-      </div>
-      <div class="map-info reveal">
-        <div class="map-info-row">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-7.58 7-13A7 7 0 0 0 5 9c0 5.42 7 13 7 13Z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
-          <div><h4>Endereço</h4><p>R. Ten. José Telles, 460 — Centro, Angatuba/SP, 18240-000</p></div>
-        </div>
-        <div class="map-info-row">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-          <div><h4>Horário</h4><p>Seg. a Sex.: 08:30–18:00 · Sábado: 08:30–13:00</p></div>
-        </div>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=R.+Ten.+Jos%C3%A9+Telles,+460,+Centro,+Angatuba+-+SP,+18240-000" class="btn btn-solid-blue" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="17" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-8-8 18-2-8-8-2Z"/></svg>
-          Traçar rota
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="https://wa.me/5511999999999?text=Olá!%20Estava%20no%20site%20e%20gostaria%20de%20tirar%20uma%20dúvida." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Falar conosco pelo WhatsApp">
+    <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+  </a>
+
+  <!-- Footer -->
+  <footer id="contato">
+    <div class="container">
+      <div class="social-links">
+        <a href="https://www.instagram.com/lojadoboyoficial" target="_blank" rel="noopener noreferrer" aria-label="Acessar Instagram da Loja do Boy">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
         </a>
       </div>
+      <p>&copy; 2026 Loja do Boy. Todos os direitos reservados.</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- ============ CONTATO ============ -->
-<section id="contato" class="section-pad">
-  <div class="wrap">
-    <span class="eyebrow reveal">Contato</span>
-    <h2 class="reveal">Fala com a gente</h2>
-    <p class="section-intro reveal">Escolha o canal — mas se quiser resposta rápida de verdade, o WhatsApp é o mais direto.</p>
-    <div class="contact-grid">
-      <div class="contact-card wa reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/></svg></div>
-        <h4>WhatsApp</h4>
-        <p>(15) 99676-1741 — respondemos durante o horário de funcionamento.</p>
-        <a href="https://wa.me/5515996761741" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Chamar agora</a>
-      </div>
-      <div class="contact-card ig reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/></svg></div>
-        <h4>Instagram</h4>
-        <p>@lojadoboyoficial — +4.400 seguidores acompanhando as novidades.</p>
-        <a href="https://www.instagram.com/lojadoboyoficial" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Seguir perfil</a>
-      </div>
-      <div class="contact-card hr reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-        <h4>Horário de funcionamento</h4>
-        <div class="hours-row"><span>Segunda a Sexta</span><b>08:30 – 18:00</b></div>
-        <div class="hours-row"><span>Sábado</span><b>08:30 – 13:00</b></div>
-        <div class="hours-row"><span>Domingo</span><b>Fechado</b></div>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- Script Otimizado -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Menu Mobile com gerenciamento de ARIA
+      const burger = document.getElementById('burgerBtn');
+      const navLinks = document.getElementById('navLinks');
 
-<!-- ============ FAQ ============ -->
-<section id="faq" class="section-pad" style="background:var(--bg-alt);">
-  <div class="wrap">
-    <span class="eyebrow reveal">Dúvidas frequentes</span>
-    <h2 class="reveal">Perguntas que a gente mais recebe</h2>
-    <div class="faq-list" style="margin-top:36px;">
-      <div class="faq-item reveal">
-        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-1" id="faq-q-1"><h4>Vocês fazem entrega?</h4><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-        <div class="faq-a" id="faq-a-1" role="region" aria-labelledby="faq-q-1"><p>A forma mais rápida é a retirada na loja, no Centro de Angatuba. Chame no WhatsApp para confirmar disponibilidade e combinar o melhor jeito de receber o seu produto.</p></div>
-      </div>
-      <div class="faq-item reveal">
-        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-2" id="faq-q-2"><h4>Quais formas de pagamento são aceitas?</h4><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-        <div class="faq-a" id="faq-a-2" role="region" aria-labelledby="faq-q-2"><p>Fale com a equipe pelo WhatsApp para confirmar as formas de pagamento disponíveis no momento da sua compra.</p></div>
-      </div>
-      <div class="faq-item reveal">
-        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-3" id="faq-q-3"><h4>Consigo reservar um produto antes de ir até a loja?</h4><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-        <div class="faq-a" id="faq-a-3" role="region" aria-labelledby="faq-q-3"><p>Sim! Manda uma mensagem no WhatsApp contando o que você procura — a equipe confirma se tem em estoque e já deixa separado para retirada.</p></div>
-      </div>
-      <div class="faq-item reveal">
-        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-4" id="faq-q-4"><h4>Os produtos têm garantia?</h4><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-        <div class="faq-a" id="faq-a-4" role="region" aria-labelledby="faq-q-4"><p>Sim, trabalhamos com produtos originais. As condições de garantia variam por item — pergunte no WhatsApp antes de fechar a compra.</p></div>
-      </div>
-      <div class="faq-item reveal">
-        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-5" id="faq-q-5"><h4>Vocês têm loja física para eu visitar?</h4><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-        <div class="faq-a" id="faq-a-5" role="region" aria-labelledby="faq-q-5"><p>Sim! Estamos na R. Ten. José Telles, 460, Centro de Angatuba/SP. Funcionamos de segunda a sexta das 08:30 às 18:00 e aos sábados das 08:30 às 13:00.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CTA FINAL ============ -->
-<section class="section-pad">
-  <div class="wrap">
-    <div class="cta-final reveal">
-      <h2>Sonhou? Corre atrás.</h2>
-      <p>Chama agora no WhatsApp e já sai sabendo se o que você procura está na loja.</p>
-      <div class="cta-btn-row">
-        <a href="https://wa.me/5515996761741?text=Oi!%20Vim%20pelo%20site%20e%20quero%20saber%20mais." class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/></svg>
-          Falar no WhatsApp
-        </a>
-        <a href="#mapa" class="btn btn-dark">Ver endereço</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FOOTER ============ -->
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="#" class="logo"><span class="logo-badge">B</span> Loja do Boy</a>
-        <p>Eletrônicos, acessórios de celular, presentes e novidades importadas no Centro de Angatuba/SP. Sonhou? Corre atrás.</p>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/lojadoboyoficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/></svg></a>
-          <a href="https://wa.me/5515996761741" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/></svg></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h5>Navegação</h5>
-        <a href="#sobre">Sobre</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#avaliacoes">Avaliações</a>
-        <a href="#faq">FAQ</a>
-      </div>
-      <div class="footer-col">
-        <h5>Contato</h5>
-        <p>(15) 99676-1741</p>
-        <p>R. Ten. José Telles, 460</p>
-        <p>Centro, Angatuba/SP</p>
-      </div>
-      <div class="footer-col">
-        <h5>Horário</h5>
-        <p>Seg–Sex: 08:30–18:00</p>
-        <p>Sábado: 08:30–13:00</p>
-        <p>Domingo: fechado</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> Loja do Boy. Todos os direitos reservados.</span>
-      <span>Centro, Angatuba/SP — CEP 18240-000</span>
-    </div>
-  </div>
-</footer>
-
-<a href="https://wa.me/5515996761741?text=Oi!%20Vim%20pelo%20site%20e%20quero%20saber%20mais." class="float-wa" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 9.5c0 3.5 3 6.5 6.5 6.5"/></svg>
-</a>
-
-<script>
-  // Year
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Header scroll state
-  const header = document.getElementById('siteHeader');
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 40);
-  });
-
-  // Mobile menu
-  const burger = document.getElementById('burgerBtn');
-  const navLinks = document.getElementById('navLinks');
-  burger.addEventListener('click', () => navLinks.classList.toggle('open'));
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
-
-  // Scroll reveal
-  const revealEls = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-    });
-  }, { threshold: 0.12 });
-  revealEls.forEach(el => io.observe(el));
-
-  // FAQ accordion — native <button> triggers click on Enter/Space automatically
-  document.querySelectorAll('.faq-item').forEach(item => {
-    const trigger = item.querySelector('.faq-q');
-    trigger.addEventListener('click', () => {
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(o => {
-        o.classList.remove('open');
-        o.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      burger.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        burger.setAttribute('aria-expanded', isOpen);
       });
-      if (!isOpen) {
-        item.classList.add('open');
-        trigger.setAttribute('aria-expanded', 'true');
+
+      // Fechar menu mobile ao clicar num link
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+          burger.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      // Simple Auto-Slider Hero
+      const slides = document.querySelectorAll('.hv-slide');
+      if (slides.length > 1) {
+        let currentSlide = 0;
+        setInterval(() => {
+          slides[currentSlide].classList.remove('active');
+          currentSlide = (currentSlide + 1) % slides.length;
+          slides[currentSlide].classList.add('active');
+        }, 4000);
       }
     });
-  });
-
-  // Live "aberto agora" status — America/Sao_Paulo store hours
-  function updateStoreStatus(){
-    const badge = document.getElementById('statusBadge');
-    const text = document.getElementById('statusText');
-    const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
-    const day = now.getDay(); // 0=Sun..6=Sat
-    const minutes = now.getHours() * 60 + now.getMinutes();
-    let open = false, nextOpenMsg = '';
-
-    if (day >= 1 && day <= 5) {
-      open = minutes >= (8*60+30) && minutes < (18*60);
-      nextOpenMsg = minutes < (8*60+30) ? 'Abre hoje às 08:30' : 'Reabre amanhã às 08:30';
-    } else if (day === 6) {
-      open = minutes >= (8*60+30) && minutes < (13*60);
-      nextOpenMsg = minutes < (8*60+30) ? 'Abre hoje às 08:30' : 'Reabre segunda às 08:30';
-    } else {
-      open = false;
-      nextOpenMsg = 'Reabre segunda às 08:30';
-    }
-
-    badge.setAttribute('data-open', open);
-    text.textContent = open ? 'Aberto agora' : nextOpenMsg;
-  }
-  updateStoreStatus();
-  setInterval(updateStoreStatus, 60000);
-
-  // Hero image slider — crossfade between store photos
-  const heroSlides = document.querySelectorAll('.hv-slide');
-  if (heroSlides.length > 1) {
-    let slideIndex = 0;
-    setInterval(() => {
-      heroSlides[slideIndex].classList.remove('active');
-      slideIndex = (slideIndex + 1) % heroSlides.length;
-      heroSlides[slideIndex].classList.add('active');
-    }, 4500);
-  }
-</script>
+  </script>
 </body>
 </html>
