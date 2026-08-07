@@ -272,10 +272,6 @@
     position:relative;
     overflow:hidden;
   }
-  .hero-particles{
-    position:absolute; inset:0; width:100%; height:100%;
-    z-index:0; pointer-events:none; opacity:0.7;
-  }
   .hero .wrap.hero-grid, .hero .marquee-wrap{ position:relative; z-index:1; }
   .hero::before{
     content:"";
@@ -679,6 +675,7 @@
   }
   .faq-q{
     display:flex; justify-content:space-between; align-items:center; cursor:pointer; gap:20px;
+    width:100%; text-align:left; padding:0; border-radius:6px;
   }
   .faq-q h4{ font-size:16.5px; font-weight:600; font-family:'Inter'; }
   .faq-q .chev{ width:22px; height:22px; flex-shrink:0; transition:transform .35s var(--ease); color:var(--yellow); }
@@ -771,7 +768,7 @@
       </ul>
       <div class="nav-actions">
         <a href="#contato" class="btn btn-outline btn-sm">Como chegar</a>
-        <a href="https://wa.me/5515996761741?text=Oi!%20Vim%20pelo%20site%20e%20quero%20saber%20mais." class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+        <a href="https://wa.me/5515996761741?text=Oi!%20Vim%20pelo%20site%20e%20quero%20saber%20mais." class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" width="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 9.5c0 3.5 3 6.5 6.5 6.5"/></svg>
           WhatsApp
         </a>
@@ -785,7 +782,6 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
-  <canvas id="particleCanvas" class="hero-particles" aria-hidden="true"></canvas>
   <div class="wrap hero-grid">
     <div>
       <span class="status-badge" id="statusBadge" data-open="false">
@@ -795,7 +791,7 @@
       <h1>Sonhou? <span class="accent">Corre atrás.</span></h1>
       <p class="lead">Eletrônicos, acessórios de celular, presentes e as últimas novidades importadas — tudo no Centro de Angatuba, com atendimento direto de gente que entende do assunto.</p>
       <div class="hero-cta-row">
-        <a href="https://wa.me/5515996761741?text=Oi!%20Vim%20pelo%20site%20e%20quero%20saber%20mais." class="btn btn-primary" target="_blank" rel="noopener">
+        <a href="https://wa.me/5515996761741?text=Oi!%20Vim%20pelo%20site%20e%20quero%20saber%20mais." class="btn btn-primary" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" width="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 9.5c0 3.5 3 6.5 6.5 6.5"/></svg>
           Falar no WhatsApp
         </a>
@@ -803,7 +799,7 @@
           <svg viewBox="0 0 24 24" width="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-7.58 7-13A7 7 0 0 0 5 9c0 5.42 7 13 7 13Z"/><circle cx="12" cy="9" r="2.5"/></svg>
           Como chegar
         </a>
-        <a href="https://www.instagram.com/lojadoboyoficial" class="btn btn-outline" target="_blank" rel="noopener">
+        <a href="https://www.instagram.com/lojadoboyoficial" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" width="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1"/></svg>
           Instagram
         </a>
@@ -819,8 +815,8 @@
     <div class="hero-visual">
       <div class="hv-card hv-main">
         <div class="hv-slider">
-          <img src="painel-neon.jpg" alt="Loja do Boy" class="hv-main-img hv-slide active" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
-          <img src="produto2.jpg" alt="Loja do Boy" class="hv-main-img hv-slide" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
+          <img src="painel-neon.jpg" alt="Fachada da Loja do Boy com painel neon iluminado, Centro de Angatuba/SP" class="hv-main-img hv-slide active" loading="eager" fetchpriority="high" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
+          <img src="produto2.jpg" alt="Vitrine de eletrônicos e acessórios da Loja do Boy em Angatuba/SP" class="hv-main-img hv-slide" loading="eager" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
         </div>
         <div class="hv-main-overlay"></div>
         <div class="tag-hole"></div>
@@ -959,7 +955,7 @@
           <span>Capinhas</span><span>Películas</span><span>Cabos</span><span>Fones bluetooth</span><span>Suporte veicular</span><span>Caixa de som</span>
         </div>
         <div class="price-range">a partir de <b>R$ 25</b></div>
-        <a href="https://wa.me/5515996761741?text=Oi!%20Quero%20ver%20acess%C3%B3rios%20de%20celular." class="btn btn-outline btn-sm" target="_blank" rel="noopener">Consultar no WhatsApp</a>
+        <a href="https://wa.me/5515996761741?text=Oi!%20Quero%20ver%20acess%C3%B3rios%20de%20celular." class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Consultar no WhatsApp</a>
       </div>
 
       <div class="product-card reveal">
@@ -969,7 +965,7 @@
           <span>Mouse</span><span>Teclado</span><span>Adaptadores</span><span>Periféricos</span><span>Eletroeletrônicos</span>
         </div>
         <div class="price-range">faixa de <b>R$ 40 – R$ 200</b></div>
-        <a href="https://wa.me/5515996761741?text=Oi!%20Quero%20ver%20eletr%C3%B4nicos%20e%20inform%C3%A1tica." class="btn btn-outline btn-sm" target="_blank" rel="noopener">Consultar no WhatsApp</a>
+        <a href="https://wa.me/5515996761741?text=Oi!%20Quero%20ver%20eletr%C3%B4nicos%20e%20inform%C3%A1tica." class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Consultar no WhatsApp</a>
       </div>
 
       <div class="product-card reveal">
@@ -979,13 +975,13 @@
           <span>Artigos importados</span><span>Utilidades</span><span>Novidades</span><span>Ideias de presente</span>
         </div>
         <div class="price-range">a partir de <b>R$ 25</b></div>
-        <a href="https://wa.me/5515996761741?text=Oi!%20Quero%20ver%20op%C3%A7%C3%B5es%20de%20presente." class="btn btn-outline btn-sm" target="_blank" rel="noopener">Consultar no WhatsApp</a>
+        <a href="https://wa.me/5515996761741?text=Oi!%20Quero%20ver%20op%C3%A7%C3%B5es%20de%20presente." class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Consultar no WhatsApp</a>
       </div>
     </div>
 
     <div class="catalog-note reveal">
       <p><strong>Catálogo completo em construção.</strong> O estoque muda toda semana — pra ver o que chegou agora, o jeito mais rápido é chamar no WhatsApp ou dar uma olhada no Instagram.</p>
-      <a href="https://wa.me/5515996761741" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Ver novidades</a>
+      <a href="https://wa.me/5515996761741" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Ver novidades</a>
     </div>
   </div>
 </section>
@@ -998,7 +994,7 @@
         <span class="promo-tag">NOVIDADE DA SEMANA</span>
         <h3>Tem novidade nova na Loja do Boy.</h3>
         <p>Toda semana chega alguma novidade na vitrine — de eletrônico a mobilidade elétrica. Chama no WhatsApp e confere o que acabou de chegar.</p>
-        <a href="https://wa.me/5515996761741?text=Oi!%20Quero%20saber%20mais%20sobre%20as%20novidades%20da%20semana." class="btn btn-primary" target="_blank" rel="noopener">
+        <a href="https://wa.me/5515996761741?text=Oi!%20Quero%20saber%20mais%20sobre%20as%20novidades%20da%20semana." class="btn btn-primary" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" width="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/></svg>
           Quero saber mais
         </a>
@@ -1018,11 +1014,11 @@
     <p class="section-intro reveal">Fotos reais da loja, das novidades e do dia a dia — atualizado direto do Instagram <strong>@lojadoboyoficial</strong>.</p>
     <div class="gallery-grid">
       <div class="gallery-item g-big reveal">
-        <img src="painel-neon.jpg" alt="Painel neon da fachada da Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
+        <img src="painel-neon.jpg" alt="Painel neon na fachada da Loja do Boy, Centro de Angatuba/SP" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
         <span class="g-caption">Fachada da loja</span>
       </div>
       <div class="gallery-item reveal">
-        <img src="boombox.jpg" alt="Caixa de som à venda na Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
+        <img src="boombox.jpg" alt="Caixa de som Boombox à venda na Loja do Boy em Angatuba/SP" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
         <span class="g-caption">Vitrine tech</span>
       </div>
       <div class="gallery-item reveal">
@@ -1030,7 +1026,7 @@
         <span class="g-caption">Presentes</span>
       </div>
       <div class="gallery-item g-big reveal">
-        <img src="felipe-boy.jpg" alt="Felipe, fundador da Loja do Boy" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
+        <img src="felipe-boy.jpg" alt="Felipe Mendes e equipe da Loja do Boy, Centro de Angatuba/SP" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800';">
         <span class="g-caption">Time Loja do Boy ❤</span>
       </div>
       <div class="gallery-item reveal">
@@ -1090,7 +1086,7 @@
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
           <div><h4>Horário</h4><p>Seg. a Sex.: 08:30–18:00 · Sábado: 08:30–13:00</p></div>
         </div>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=R.+Ten.+Jos%C3%A9+Telles,+460,+Centro,+Angatuba+-+SP,+18240-000" class="btn btn-solid-blue" target="_blank" rel="noopener">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=R.+Ten.+Jos%C3%A9+Telles,+460,+Centro,+Angatuba+-+SP,+18240-000" class="btn btn-solid-blue" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" width="17" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-8-8 18-2-8-8-2Z"/></svg>
           Traçar rota
         </a>
@@ -1110,13 +1106,13 @@
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/></svg></div>
         <h4>WhatsApp</h4>
         <p>(15) 99676-1741 — respondemos durante o horário de funcionamento.</p>
-        <a href="https://wa.me/5515996761741" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Chamar agora</a>
+        <a href="https://wa.me/5515996761741" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Chamar agora</a>
       </div>
       <div class="contact-card ig reveal">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/></svg></div>
         <h4>Instagram</h4>
         <p>@lojadoboyoficial — +4.400 seguidores acompanhando as novidades.</p>
-        <a href="https://www.instagram.com/lojadoboyoficial" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Seguir perfil</a>
+        <a href="https://www.instagram.com/lojadoboyoficial" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Seguir perfil</a>
       </div>
       <div class="contact-card hr reveal">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
@@ -1136,24 +1132,24 @@
     <h2 class="reveal">Perguntas que a gente mais recebe</h2>
     <div class="faq-list" style="margin-top:36px;">
       <div class="faq-item reveal">
-        <div class="faq-q"><h4>Vocês fazem entrega?</h4><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
-        <div class="faq-a"><p>A forma mais rápida é a retirada na loja, no Centro de Angatuba. Chame no WhatsApp para confirmar disponibilidade e combinar o melhor jeito de receber o seu produto.</p></div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-1" id="faq-q-1"><h4>Vocês fazem entrega?</h4><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a" id="faq-a-1" role="region" aria-labelledby="faq-q-1"><p>A forma mais rápida é a retirada na loja, no Centro de Angatuba. Chame no WhatsApp para confirmar disponibilidade e combinar o melhor jeito de receber o seu produto.</p></div>
       </div>
       <div class="faq-item reveal">
-        <div class="faq-q"><h4>Quais formas de pagamento são aceitas?</h4><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
-        <div class="faq-a"><p>Fale com a equipe pelo WhatsApp para confirmar as formas de pagamento disponíveis no momento da sua compra.</p></div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-2" id="faq-q-2"><h4>Quais formas de pagamento são aceitas?</h4><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a" id="faq-a-2" role="region" aria-labelledby="faq-q-2"><p>Fale com a equipe pelo WhatsApp para confirmar as formas de pagamento disponíveis no momento da sua compra.</p></div>
       </div>
       <div class="faq-item reveal">
-        <div class="faq-q"><h4>Consigo reservar um produto antes de ir até a loja?</h4><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
-        <div class="faq-a"><p>Sim! Manda uma mensagem no WhatsApp contando o que você procura — a equipe confirma se tem em estoque e já deixa separado para retirada.</p></div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-3" id="faq-q-3"><h4>Consigo reservar um produto antes de ir até a loja?</h4><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a" id="faq-a-3" role="region" aria-labelledby="faq-q-3"><p>Sim! Manda uma mensagem no WhatsApp contando o que você procura — a equipe confirma se tem em estoque e já deixa separado para retirada.</p></div>
       </div>
       <div class="faq-item reveal">
-        <div class="faq-q"><h4>Os produtos têm garantia?</h4><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
-        <div class="faq-a"><p>Sim, trabalhamos com produtos originais. As condições de garantia variam por item — pergunte no WhatsApp antes de fechar a compra.</p></div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-4" id="faq-q-4"><h4>Os produtos têm garantia?</h4><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a" id="faq-a-4" role="region" aria-labelledby="faq-q-4"><p>Sim, trabalhamos com produtos originais. As condições de garantia variam por item — pergunte no WhatsApp antes de fechar a compra.</p></div>
       </div>
       <div class="faq-item reveal">
-        <div class="faq-q"><h4>Vocês têm loja física para eu visitar?</h4><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
-        <div class="faq-a"><p>Sim! Estamos na R. Ten. José Telles, 460, Centro de Angatuba/SP. Funcionamos de segunda a sexta das 08:30 às 18:00 e aos sábados das 08:30 às 13:00.</p></div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-5" id="faq-q-5"><h4>Vocês têm loja física para eu visitar?</h4><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a" id="faq-a-5" role="region" aria-labelledby="faq-q-5"><p>Sim! Estamos na R. Ten. José Telles, 460, Centro de Angatuba/SP. Funcionamos de segunda a sexta das 08:30 às 18:00 e aos sábados das 08:30 às 13:00.</p></div>
       </div>
     </div>
   </div>
@@ -1166,7 +1162,7 @@
       <h2>Sonhou? Corre atrás.</h2>
       <p>Chama agora no WhatsApp e já sai sabendo se o que você procura está na loja.</p>
       <div class="cta-btn-row">
-        <a href="https://wa.me/5515996761741?text=Oi!%20Vim%20pelo%20site%20e%20quero%20saber%20mais." class="btn btn-primary" target="_blank" rel="noopener">
+        <a href="https://wa.me/5515996761741?text=Oi!%20Vim%20pelo%20site%20e%20quero%20saber%20mais." class="btn btn-primary" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" width="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/></svg>
           Falar no WhatsApp
         </a>
@@ -1184,8 +1180,8 @@
         <a href="#" class="logo"><span class="logo-badge">B</span> Loja do Boy</a>
         <p>Eletrônicos, acessórios de celular, presentes e novidades importadas no Centro de Angatuba/SP. Sonhou? Corre atrás.</p>
         <div class="footer-social">
-          <a href="https://www.instagram.com/lojadoboyoficial" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/></svg></a>
-          <a href="https://wa.me/5515996761741" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/></svg></a>
+          <a href="https://www.instagram.com/lojadoboyoficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/></svg></a>
+          <a href="https://wa.me/5515996761741" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/></svg></a>
         </div>
       </div>
       <div class="footer-col">
@@ -1215,7 +1211,7 @@
   </div>
 </footer>
 
-<a href="https://wa.me/5515996761741?text=Oi!%20Vim%20pelo%20site%20e%20quero%20saber%20mais." class="float-wa" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+<a href="https://wa.me/5515996761741?text=Oi!%20Vim%20pelo%20site%20e%20quero%20saber%20mais." class="float-wa" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 21l2.06-5.44A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 9.5c0 3.5 3 6.5 6.5 6.5"/></svg>
 </a>
 
@@ -1244,12 +1240,19 @@
   }, { threshold: 0.12 });
   revealEls.forEach(el => io.observe(el));
 
-  // FAQ accordion
+  // FAQ accordion — native <button> triggers click on Enter/Space automatically
   document.querySelectorAll('.faq-item').forEach(item => {
-    item.querySelector('.faq-q').addEventListener('click', () => {
+    const trigger = item.querySelector('.faq-q');
+    trigger.addEventListener('click', () => {
       const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(o => o.classList.remove('open'));
-      if (!isOpen) item.classList.add('open');
+      document.querySelectorAll('.faq-item.open').forEach(o => {
+        o.classList.remove('open');
+        o.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
     });
   });
 
