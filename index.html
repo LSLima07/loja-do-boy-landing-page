@@ -293,8 +293,17 @@
     padding:168px 0 100px;
     position:relative;
     overflow:hidden;
+    background-image:url('./bg-neon.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
   }
-  .hero .wrap.hero-grid, .hero .marquee-wrap{ position:relative; z-index:1; }
+  .hero-overlay{
+    position:absolute; inset:0; z-index:1;
+    background:linear-gradient(180deg, rgba(11,18,32,0.78) 0%, rgba(11,18,32,0.88) 55%, rgba(11,18,32,0.94) 100%);
+    pointer-events:none;
+  }
+  .hero .wrap.hero-grid, .hero .marquee-wrap{ position:relative; z-index:2; }
   .hero::before{
     content:"";
     position:absolute; top:-220px; right:-160px;
@@ -865,6 +874,7 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
+  <div class="hero-overlay" aria-hidden="true"></div>
   <div class="wrap hero-grid">
     <div>
       <span class="status-badge" id="statusBadge" data-open="false">
