@@ -647,7 +647,7 @@
 
   .review-card{
     background:var(--card); border:1px solid var(--card-line); border-radius:var(--radius-md);
-    padding:30px; position:relative;
+    padding:30px; position:relative; overflow:hidden;
     display:flex; flex-direction:column;
     transition:transform .3s ease, border-color .3s ease;
   }
@@ -779,6 +779,29 @@
   }
   @media(prefers-reduced-motion:reduce){ .float-wa{ animation:none; } }
 
+  /* Pulso neon no CTA principal do WhatsApp no Hero */
+  .hero-cta-row .btn-primary{
+    animation:hero-wa-pulse 2.4s infinite;
+  }
+  .hero-cta-row .btn-primary:hover{ animation-play-state:paused; }
+  @keyframes hero-wa-pulse{
+    0%{ box-shadow:0 0 18px 2px rgba(37,211,102,0.45), 0 14px 34px -12px rgba(37,211,102,0.55), 0 0 0 0 rgba(37,211,102,0.5); }
+    70%{ box-shadow:0 0 18px 2px rgba(37,211,102,0.45), 0 14px 34px -12px rgba(37,211,102,0.55), 0 0 0 16px rgba(37,211,102,0); }
+    100%{ box-shadow:0 0 18px 2px rgba(37,211,102,0.45), 0 14px 34px -12px rgba(37,211,102,0.55), 0 0 0 0 rgba(37,211,102,0); }
+  }
+  @media(prefers-reduced-motion:reduce){ .hero-cta-row .btn-primary{ animation:none; } }
+
+  /* ---------- SPOTLIGHT GLOW (segue o cursor) ---------- */
+  .product-card, .review-card{ --spot-x:50%; --spot-y:50%; }
+  .product-card::before, .review-card::before{
+    content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
+    opacity:0; transition:opacity .35s ease;
+    background:radial-gradient(280px circle at var(--spot-x) var(--spot-y),
+      rgba(0,240,255,0.22), rgba(255,0,127,0.14) 42%, transparent 70%);
+  }
+  .product-card:hover::before, .review-card:hover::before{ opacity:1; }
+  @media(hover:none){ .product-card::before, .review-card::before{ display:none; } }
+
   /* ---------- LGPD COOKIE BANNER ---------- */
   .cookie-banner{
     position:fixed; left:0; right:0; bottom:0; z-index:200;
@@ -866,8 +889,8 @@
       </div>
       <div class="trust-row">
         <div class="trust-item"><span class="stars">★★★★★</span><span class="label">avaliação no Google</span></div>
-        <div class="trust-item"><span class="num">4,8</span><span class="label">nota média</span></div>
-        <div class="trust-item"><span class="num">+4.400</span><span class="label">seguidores no Instagram</span></div>
+        <div class="trust-item"><span class="num count-up" data-target="4.8" data-decimals="1">0</span><span class="label">nota média</span></div>
+        <div class="trust-item"><span class="num count-up" data-target="4400" data-prefix="+">0</span><span class="label">seguidores no Instagram</span></div>
         <div class="trust-item"><span class="num">Centro</span><span class="label">de Angatuba/SP</span></div>
       </div>
     </div>
@@ -1110,7 +1133,7 @@
     <div class="review-layout">
       <div class="review-score reveal">
         <div>
-          <div class="big-num">4,8</div>
+          <div class="big-num count-up" data-target="4.8" data-decimals="1">0</div>
         </div>
         <div>
           <div class="stars">★★★★★</div>
@@ -1416,6 +1439,60 @@
       slideIndex = (slideIndex + 1) % heroSlides.length;
       heroSlides[slideIndex].classList.add('active');
     }, 4500);
+  }
+
+  // Spotlight glow — brilho neon que segue o cursor nos cards de produtos e depoimentos
+  document.querySelectorAll('.product-card, .review-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty('--spot-x', x + '%');
+      card.style.setProperty('--spot-y', y + '%');
+    });
+  });
+
+  // Contador animado (count-up) — números sobem do zero até o valor final ao entrar na tela
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function animateCountUp(el){
+    const target = parseFloat(el.dataset.target);
+    const decimals = parseInt(el.dataset.decimals || '0', 10);
+    const prefix = el.dataset.prefix || '';
+    const suffix = el.dataset.suffix || '';
+
+    function format(value){
+      return prefix + value.toLocaleString('pt-BR', {
+        minimumFractionDigits: decimals,
+        maximumFractionDigits: decimals
+      }) + suffix;
+    }
+
+    if (prefersReducedMotion) { el.textContent = format(target); return; }
+
+    const duration = 1400;
+    const startTime = performance.now();
+    function tick(now){
+      const progress = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3); // ease-out cúbico
+      el.textContent = format(target * eased);
+      if (progress < 1) requestAnimationFrame(tick);
+      else el.textContent = format(target);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  const countUpEls = document.querySelectorAll('.count-up');
+  if (countUpEls.length) {
+    const countObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCountUp(entry.target);
+          countObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    countUpEls.forEach(el => countObserver.observe(el));
   }
 </script>
 </body>
