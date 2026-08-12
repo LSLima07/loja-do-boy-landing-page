@@ -594,9 +594,9 @@
     background:radial-gradient(circle, rgba(255,201,60,0.2), transparent 70%);
   }
   .promo-tag{
-    display:inline-block; background:var(--yellow); color:#241900; font-weight:800;
+    display:inline-block; background:rgba(255,201,60,0.08); color:var(--yellow); font-weight:800;
     font-size:12px; padding:6px 14px; border-radius:100px; margin-bottom:18px;
-    font-family:'JetBrains Mono';
+    font-family:'JetBrains Mono'; border:1px solid rgba(255,201,60,0.4);
   }
   .promo-banner h3{font-size:clamp(24px,3vw,34px); margin-bottom:14px;}
   .promo-banner p{color:var(--muted); max-width:460px; margin-bottom:26px;}
@@ -840,6 +840,54 @@
 
   ::selection{ background:var(--yellow); color:#241900; }
   :focus-visible{ outline:2px solid var(--yellow); outline-offset:3px; border-radius:4px; }
+
+  /* ---------- SHINY TEXT (efeito brilho passando pelo texto) ---------- */
+  .shiny-text {
+    display: inline-block;
+    background: linear-gradient(
+      120deg,
+      #FFFFFF 0%,
+      #FFFFFF 35%,
+      #00F0FF 50%,
+      #FFFFFF 65%,
+      #FFFFFF 100%
+    );
+    background-size: 200% auto;
+    color: #FFFFFF;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shineText 3s linear infinite;
+  }
+  /* Versão com destaque em Amarelo/Ciano Neon da marca */
+  .shiny-text-gold {
+    display: inline-block;
+    background: linear-gradient(
+      120deg,
+      #FFB800 0%,
+      #FFB800 35%,
+      #FFFFFF 50%,
+      #FFB800 65%,
+      #FFB800 100%
+    );
+    background-size: 200% auto;
+    color: #FFB800;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shineText 2.5s linear infinite;
+  }
+  @keyframes shineText {
+    0% {
+      background-position: 150% center;
+    }
+    100% {
+      background-position: -50% center;
+    }
+  }
+  @media(prefers-reduced-motion:reduce){
+    .shiny-text, .shiny-text-gold{ animation:none; }
+  }
 </style>
 </head>
 <body>
@@ -881,7 +929,7 @@
         <span class="status-dot"></span>
         <span id="statusText">Verificando horário…</span>
       </span>
-      <h1>Sonhou? <span class="accent">Corre atrás.</span></h1>
+      <h1>Sonhou? <span class="accent shiny-text-gold">Corre atrás.</span></h1>
       <p class="lead">Eletrônicos, acessórios de celular, presentes e as últimas novidades importadas — tudo no Centro de Angatuba, com atendimento direto de gente que entende do assunto.</p>
       <div class="hero-cta-row">
         <a href="https://wa.me/5515996761741?text=Ol%C3%A1%20Boy!%20Vim%20pelo%20site%20e%20quero%20saber%20mais." class="btn btn-primary" target="_blank" rel="noopener noreferrer" onclick="trackWhatsApp('hero')">
@@ -933,7 +981,7 @@
       </div>
       <div class="hv-card hv-badge">
         <span>🔥</span>
-        <span><b>POCO X8 Pro</b><br>chegou na loja</span>
+        <span><b class="shiny-text-gold">POCO X8 Pro</b><br>chegou na loja</span>
       </div>
     </div>
   </div>
@@ -1084,7 +1132,7 @@
   <div class="wrap">
     <div class="promo-banner reveal">
       <div>
-        <span class="promo-tag">NOVIDADE DA SEMANA</span>
+        <span class="promo-tag"><span class="shiny-text">NOVIDADE DA SEMANA</span></span>
         <h3>Tem novidade nova na Loja do Boy.</h3>
         <p>Toda semana chega alguma novidade na vitrine — de eletrônico a mobilidade elétrica. Chama no WhatsApp e confere o que acabou de chegar.</p>
         <a href="https://wa.me/5515996761741?text=Ol%C3%A1%20Boy,%20quero%20saber%20mais%20sobre%20a%20novidade%20em%20destaque%20no%20site." class="btn btn-primary" target="_blank" rel="noopener noreferrer" onclick="trackWhatsApp('promo_novidades')">
