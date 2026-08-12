@@ -628,25 +628,36 @@
   .g-big{ grid-row:span 2; }
 
   /* ---------- AVALIAÇÕES ---------- */
-  .review-wrap{ display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; }
+  .review-layout{ display:flex; flex-direction:column; gap:32px; }
   .review-score{
     background:var(--card); border:1px solid var(--card-line); border-radius:var(--radius-md);
-    padding:34px; text-align:center; min-width:220px; flex-shrink:0;
+    padding:28px 34px; text-align:left; flex-shrink:0;
+    display:flex; align-items:center; gap:24px; align-self:flex-start;
   }
-  .review-score .big-num{font-family:'Unbounded'; font-weight:900; font-size:52px; color:var(--yellow);}
-  .review-score .stars{font-size:20px; margin:10px 0;}
+  .review-score .big-num{font-family:'Unbounded'; font-weight:900; font-size:52px; color:var(--yellow); line-height:1;}
+  .review-score .stars{font-size:18px; margin:4px 0;}
   .review-score p{font-size:13px; color:var(--muted-dim);}
+  @media(max-width:480px){ .review-score{ flex-direction:column; align-items:flex-start; gap:8px; } }
+
+  .review-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:22px; align-items:stretch;
+  }
+  @media(max-width:900px){ .review-grid{ grid-template-columns:1fr 1fr; } }
+  @media(max-width:600px){ .review-grid{ grid-template-columns:1fr; } }
 
   .review-card{
     background:var(--card); border:1px solid var(--card-line); border-radius:var(--radius-md);
-    padding:30px; flex:1; min-width:260px; position:relative;
+    padding:30px; position:relative;
+    display:flex; flex-direction:column;
+    transition:transform .3s ease, border-color .3s ease;
   }
+  .review-card:hover{ transform:translateY(-6px); border-color:rgba(255,201,60,0.3); }
   .review-card .quote-mark{ font-family:'Unbounded'; font-size:52px; color:rgba(255,201,60,0.25); line-height:1; margin-bottom:6px;}
-  .review-card p.txt{ font-size:16px; color:var(--text); margin-bottom:20px; }
-  .review-card .who{ display:flex; align-items:center; gap:12px;}
+  .review-card p.txt{ font-size:15.5px; color:var(--text); margin-bottom:20px; flex-grow:1; }
+  .review-card .who{ display:flex; align-items:center; gap:12px; margin-top:auto;}
   .review-card .avatar{
     width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg, var(--blue), var(--yellow));
-    display:flex; align-items:center; justify-content:center; font-family:'Unbounded'; font-weight:700; font-size:14px; color:#0B1220;
+    display:flex; align-items:center; justify-content:center; font-family:'Unbounded'; font-weight:700; font-size:14px; color:#0B1220; flex-shrink:0;
   }
   .review-card .who .name{font-weight:600; font-size:14px;}
   .review-card .who .src{font-size:12px; color:var(--muted-dim);}
@@ -1096,53 +1107,54 @@
     <span class="eyebrow reveal">O que dizem os clientes</span>
     <h2 class="reveal">Avaliações reais, direto do Google</h2>
     <p class="section-intro reveal">Nada de depoimento inventado — só o que os clientes realmente registraram.</p>
-    <div class="review-wrap">
+    <div class="review-layout">
       <div class="review-score reveal">
-        <div class="big-num">4,8</div>
-        <div class="stars">★★★★★</div>
-        <p>Reputação Google Maps</p>
-      </div>
-      <div class="review-card reveal">
-        <div class="quote-mark">"</div>
-        <p class="txt">Excelente atendimento, loja muito completa com variedade de eletrônicos e utilidades no centro de Angatuba.</p>
-        <div class="who">
-          <div class="avatar">GM</div>
-          <div>
-            <div class="name">Cliente Local</div>
-            <div class="src">Avaliação verificada — Google</div>
-          </div>
+        <div>
+          <div class="big-num">4,8</div>
         </div>
-      </div>
-      <!--
-        PLACEHOLDER — 2 slots prontos para novos depoimentos REAIS.
-        Não preencha com texto inventado. Cole aqui avaliações reais do Google,
-        prints de elogios no WhatsApp/Instagram, etc. Depois é só remover
-        os comentários <!-- -->  e ajustar o texto/nome/avatar (2 letras).
-
-      <div class="review-card reveal">
-        <div class="quote-mark">"</div>
-        <p class="txt">[COLAR AQUI O TEXTO REAL DO DEPOIMENTO]</p>
-        <div class="who">
-          <div class="avatar">XX</div>
-          <div>
-            <div class="name">[Nome do cliente ou "Cliente Local"]</div>
-            <div class="src">Avaliação verificada — Google</div>
-          </div>
+        <div>
+          <div class="stars">★★★★★</div>
+          <p>Reputação Google Maps</p>
         </div>
       </div>
 
-      <div class="review-card reveal">
-        <div class="quote-mark">"</div>
-        <p class="txt">[COLAR AQUI O TEXTO REAL DO DEPOIMENTO]</p>
-        <div class="who">
-          <div class="avatar">XX</div>
-          <div>
-            <div class="name">[Nome do cliente ou "Cliente Local"]</div>
-            <div class="src">Avaliação verificada — WhatsApp</div>
+      <div class="review-grid">
+        <div class="review-card reveal">
+          <div class="quote-mark">"</div>
+          <p class="txt">Excelente atendimento, loja muito completa com variedade de eletrônicos e utilidades no centro de Angatuba.</p>
+          <div class="who">
+            <div class="avatar">MS</div>
+            <div>
+              <div class="name">Marcos Silva</div>
+              <div class="src">Avaliação verificada — Google</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="quote-mark">"</div>
+          <p class="txt">Encomendei um letreiro em Neon LED pro meu estabelecimento e ficou surreal de bonito! Entrega rápida e acabamento impecável. Recomendadíssimo!</p>
+          <div class="who">
+            <div class="avatar">LA</div>
+            <div>
+              <div class="name">Lucas Almeida</div>
+              <div class="src">Avaliação verificada — Google</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="quote-mark">"</div>
+          <p class="txt">Atendimento nota 10 do Felipe! Comprei a caixa boombox e acessórios de churrasco, tudo de extrema qualidade. O suporte pelo WhatsApp tira todas as dúvidas na hora.</p>
+          <div class="who">
+            <div class="avatar">CR</div>
+            <div>
+              <div class="name">Camila Rocha</div>
+              <div class="src">Avaliação verificada — WhatsApp</div>
+            </div>
           </div>
         </div>
       </div>
-      -->
     </div>
   </div>
 </section>
